@@ -9,7 +9,7 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
-class UserOperations {
+class UserProcesses {
     func signIn(email: String, password: String, completion: @escaping (Error?) -> Void)
     {
         Auth.auth().signIn(withEmail: email, password: password) { _, error in
@@ -49,40 +49,41 @@ class UserOperations {
             }
         }
     }
-}
-    func forgotPassword(email: String, completion: @escaping (Error?) -> Void)
+    func forgotPassword(email: String, completion: @escaping (Error?) -> Void) 
     {
-    Auth.auth().sendPasswordReset(withEmail: email) { error in
-        if let error = error
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            if let error = error 
+            {
+                completion(error)
+            } else 
+            {
+                completion(nil)
+            }
+        }
+    }
+        func changePassword(newPassword: String, completion: @escaping (Error?) -> Void)
         {
-            completion(error)
+        if let user = Auth.auth().currentUser
+        {
+            user.updatePassword(to: newPassword) { error in
+                completion(error)
+            }
         } else
         {
             completion(nil)
         }
     }
-}
-    func changePassword(newPassword: String, completion: @escaping (Error?) -> Void)
-    {
-    if let user = Auth.auth().currentUser
-    {
-        user.updatePassword(to: newPassword) { error in
-            completion(error)
-        }
-    } else
-    {
-        completion(nil)
-    }
-}
-    func signOut(completion: @escaping (Bool) -> Void)
-    {
-    do
-    {
-        try Auth.auth().signOut()
-        completion(true)
-    } catch
+        func signOut(completion: @escaping (Bool) -> Void)
         {
-        print(error.localizedDescription)
-        completion(false)
+        do
+        {
+            try Auth.auth().signOut()
+            completion(true)
+        } catch
+            {
+            print(error.localizedDescription)
+            completion(false)
+        }
     }
 }
+
