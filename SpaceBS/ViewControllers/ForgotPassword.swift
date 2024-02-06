@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ForgotPasswordViewController: UIViewController {
+class ForgotPassword: UIViewController {
     @IBOutlet weak var emailText: UITextField!
     let viewModel = ForgotPasswordViewModel()
     
