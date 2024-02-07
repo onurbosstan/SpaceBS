@@ -8,7 +8,7 @@
 import UIKit
 
 class CuriosityPhotoDetail: UIViewController {
-    @IBOutlet weak var popUpView: UIImageView!
+    @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var earthDateLabel: UILabel!
     @IBOutlet weak var roverNameLabel: UILabel!
@@ -21,8 +21,8 @@ class CuriosityPhotoDetail: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        popUpView.layer.cornerRadius = 16
         populateData()
-        popUpView.layer.cornerRadius = 0
         popUpView.clipsToBounds = true
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.closeAction)))
         self.popUpView.addGestureRecognizer(UITapGestureRecognizer(target: self, action:  #selector(self.detailAction)))

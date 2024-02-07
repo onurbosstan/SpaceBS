@@ -9,8 +9,8 @@ import Foundation
 import Alamofire
 import RxSwift
 
-class MarsPhotoService {
-    static let shared = MarsPhotoService()
+class CuriosityPhotoService {
+    static let shared = CuriosityPhotoService()
 
     func getMarsPhotos(forRover rover: String, onEarthDate earthDate: String) -> Observable<[PhotoModel]> {
         return Observable.create { observer in
