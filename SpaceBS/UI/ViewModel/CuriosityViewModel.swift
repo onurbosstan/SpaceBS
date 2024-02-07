@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-class HomeViewModel {
+class CuriosityViewModel {
     var marsPhotoService = MarsPhotoService()
     var photoList = BehaviorSubject<[PhotoModel]>(value: [])
     var isLoading = BehaviorSubject<Bool>(value: false)
@@ -21,12 +21,13 @@ class HomeViewModel {
             .subscribe(onNext: { [weak self] (photos: [PhotoModel]) in
                 self?.photoList.onNext(photos)
                 self?.isLoading.onNext(false)
-                Animation.hideActivityIndicator()
             }, onError: { error in
                 self.isLoading.onNext(false)
                 print("Hata: \(error)")
+            }, onDisposed: {
                 Animation.hideActivityIndicator()
             })
             .disposed(by: disposeBag)
     }
+
 }

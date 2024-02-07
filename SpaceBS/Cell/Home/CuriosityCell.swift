@@ -7,12 +7,12 @@
 
 import UIKit
 
-class HomeCell: UICollectionViewCell {
+class CuriosityCell: UICollectionViewCell {
     @IBOutlet weak var collectionImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        collectionImageView.layer.cornerRadius = 4
+        collectionImageView.layer.cornerRadius = 8
     }
 }

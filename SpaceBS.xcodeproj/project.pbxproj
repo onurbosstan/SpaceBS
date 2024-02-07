@@ -7,23 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6251D022B73B56F001E09AE /* CuriosityPhotoDetail.swift */; };
+		C6251D052B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6251D042B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift */; };
+		C63DDD262B7137F4005A1C00 /* Curiosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD252B7137F4005A1C00 /* Curiosity.swift */; };
+		C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD272B7137FE005A1C00 /* CuriosityViewModel.swift */; };
+		C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2A2B727424005A1C00 /* CuriosityCell.swift */; };
+		C63DDD2D2B727439005A1C00 /* CollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2C2B727439005A1C00 /* CollectionLayout.swift */; };
+		C63DDD2F2B7295CE005A1C00 /* MarsRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2E2B7295CE005A1C00 /* MarsRoutes.swift */; };
+		C63DDD342B72984B005A1C00 /* CuriosityPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */; };
+		C63DDD362B729A4E005A1C00 /* MarsPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD352B729A4E005A1C00 /* MarsPhotoService.swift */; };
 		C6A18BF72B6AA52200CA7B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BF62B6AA52200CA7B62 /* AppDelegate.swift */; };
 		C6A18BF92B6AA52200CA7B62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BF82B6AA52200CA7B62 /* SceneDelegate.swift */; };
-		C6A18BFB2B6AA52200CA7B62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BFA2B6AA52200CA7B62 /* ViewController.swift */; };
+		C6A18BFB2B6AA52200CA7B62 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BFA2B6AA52200CA7B62 /* LogIn.swift */; };
 		C6A18BFE2B6AA52200CA7B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A18BFC2B6AA52200CA7B62 /* Main.storyboard */; };
 		C6A18C002B6AA52400CA7B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A18BFF2B6AA52400CA7B62 /* Assets.xcassets */; };
 		C6A18C032B6AA52400CA7B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A18C012B6AA52400CA7B62 /* LaunchScreen.storyboard */; };
+		C6A18C0E2B6C237700CA7B62 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C0D2B6C237700CA7B62 /* LogInViewModel.swift */; };
+		C6A18C192B6C243600CA7B62 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C182B6C243600CA7B62 /* Alamofire */; };
+		C6A18C1C2B6C245F00CA7B62 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C1B2B6C245F00CA7B62 /* Kingfisher */; };
+		C6A18C1F2B6C247400CA7B62 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C1E2B6C247400CA7B62 /* Lottie */; };
+		C6A18C222B6C248500CA7B62 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C212B6C248500CA7B62 /* RxBlocking */; };
+		C6A18C242B6C248500CA7B62 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C232B6C248500CA7B62 /* RxBlocking-Dynamic */; };
+		C6A18C262B6C248500CA7B62 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C252B6C248500CA7B62 /* RxCocoa */; };
+		C6A18C282B6C248500CA7B62 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C272B6C248500CA7B62 /* RxCocoa-Dynamic */; };
+		C6A18C2A2B6C248500CA7B62 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C292B6C248500CA7B62 /* RxRelay */; };
+		C6A18C2C2B6C24D600CA7B62 /* rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = C6A18C2B2B6C24D600CA7B62 /* rocket.json */; };
+		C6A18C2E2B6C24E900CA7B62 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C2D2B6C24E900CA7B62 /* Animation.swift */; };
+		C6A18C302B6C262F00CA7B62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6A18C2F2B6C262F00CA7B62 /* GoogleService-Info.plist */; };
+		C6A18C332B6C2AAE00CA7B62 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C322B6C2AAE00CA7B62 /* FirebaseAuth */; };
+		C6A18C352B6C2AAE00CA7B62 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C342B6C2AAE00CA7B62 /* FirebaseDatabase */; };
+		C6A18C372B6C2AAE00CA7B62 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C362B6C2AAE00CA7B62 /* FirebaseFirestore */; };
+		C6A18C392B6C2AAE00CA7B62 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C382B6C2AAE00CA7B62 /* FirebaseStorage */; };
+		C6A18C3B2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */; };
+		C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */; };
+		C6FBCA5D2B6D29E300DEA784 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA5C2B6D29E300DEA784 /* Users.swift */; };
+		C6FBCA5F2B6D2DE600DEA784 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA5E2B6D2DE600DEA784 /* Register.swift */; };
+		C6FBCA612B6D2E0200DEA784 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA602B6D2E0200DEA784 /* RegisterViewModel.swift */; };
+		C6FBCA632B6D343400DEA784 /* UserProcesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA622B6D343400DEA784 /* UserProcesses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6251D022B73B56F001E09AE /* CuriosityPhotoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotoDetail.swift; sourceTree = "<group>"; };
+		C6251D042B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotoDetailViewModel.swift; sourceTree = "<group>"; };
+		C63DDD252B7137F4005A1C00 /* Curiosity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curiosity.swift; sourceTree = "<group>"; };
+		C63DDD272B7137FE005A1C00 /* CuriosityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityViewModel.swift; sourceTree = "<group>"; };
+		C63DDD2A2B727424005A1C00 /* CuriosityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityCell.swift; sourceTree = "<group>"; };
+		C63DDD2C2B727439005A1C00 /* CollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLayout.swift; sourceTree = "<group>"; };
+		C63DDD2E2B7295CE005A1C00 /* MarsRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoutes.swift; sourceTree = "<group>"; };
+		C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotoModel.swift; sourceTree = "<group>"; };
+		C63DDD352B729A4E005A1C00 /* MarsPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoService.swift; sourceTree = "<group>"; };
 		C6A18BF32B6AA52200CA7B62 /* SpaceBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A18BF62B6AA52200CA7B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6A18BF82B6AA52200CA7B62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C6A18BFA2B6AA52200CA7B62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6A18BFA2B6AA52200CA7B62 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		C6A18BFD2B6AA52200CA7B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6A18BFF2B6AA52400CA7B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6A18C022B6AA52400CA7B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6A18C042B6AA52400CA7B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A18C0D2B6C237700CA7B62 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		C6A18C2B2B6C24D600CA7B62 /* rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket.json; sourceTree = "<group>"; };
+		C6A18C2D2B6C24E900CA7B62 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		C6A18C2F2B6C262F00CA7B62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		C6FBCA5C2B6D29E300DEA784 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		C6FBCA5E2B6D2DE600DEA784 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		C6FBCA602B6D2E0200DEA784 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		C6FBCA622B6D343400DEA784 /* UserProcesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProcesses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +81,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A18C352B6C2AAE00CA7B62 /* FirebaseDatabase in Frameworks */,
+				C6A18C262B6C248500CA7B62 /* RxCocoa in Frameworks */,
+				C6A18C282B6C248500CA7B62 /* RxCocoa-Dynamic in Frameworks */,
+				C6A18C1C2B6C245F00CA7B62 /* Kingfisher in Frameworks */,
+				C6A18C222B6C248500CA7B62 /* RxBlocking in Frameworks */,
+				C6A18C392B6C2AAE00CA7B62 /* FirebaseStorage in Frameworks */,
+				C6A18C332B6C2AAE00CA7B62 /* FirebaseAuth in Frameworks */,
+				C6A18C192B6C243600CA7B62 /* Alamofire in Frameworks */,
+				C6A18C1F2B6C247400CA7B62 /* Lottie in Frameworks */,
+				C6A18C2A2B6C248500CA7B62 /* RxRelay in Frameworks */,
+				C6A18C372B6C2AAE00CA7B62 /* FirebaseFirestore in Frameworks */,
+				C6A18C242B6C248500CA7B62 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C63DDD292B727403005A1C00 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD2A2B727424005A1C00 /* CuriosityCell.swift */,
+				C63DDD2C2B727439005A1C00 /* CollectionLayout.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C63DDD322B72983D005A1C00 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD352B729A4E005A1C00 /* MarsPhotoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C6A18BEA2B6AA52200CA7B62 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +135,113 @@
 		C6A18BF52B6AA52200CA7B62 /* SpaceBS */ = {
 			isa = PBXGroup;
 			children = (
-				C6A18BF62B6AA52200CA7B62 /* AppDelegate.swift */,
-				C6A18BF82B6AA52200CA7B62 /* SceneDelegate.swift */,
-				C6A18BFA2B6AA52200CA7B62 /* ViewController.swift */,
+				C6A18C0A2B6C233C00CA7B62 /* System */,
+				C6A18C142B6C23BD00CA7B62 /* API */,
+				C6A18C112B6C23A000CA7B62 /* Data */,
+				C6A18C0B2B6C234900CA7B62 /* UI */,
+				C6A18C0F2B6C238900CA7B62 /* Cell */,
+				C6A18C102B6C239400CA7B62 /* ViewControllers */,
+				C6A18C152B6C23E300CA7B62 /* Entity */,
+				C6A18C162B6C23F700CA7B62 /* Animation */,
 				C6A18BFC2B6AA52200CA7B62 /* Main.storyboard */,
 				C6A18BFF2B6AA52400CA7B62 /* Assets.xcassets */,
 				C6A18C012B6AA52400CA7B62 /* LaunchScreen.storyboard */,
 				C6A18C042B6AA52400CA7B62 /* Info.plist */,
+				C6A18C2F2B6C262F00CA7B62 /* GoogleService-Info.plist */,
 			);
 			path = SpaceBS;
+			sourceTree = "<group>";
+		};
+		C6A18C0A2B6C233C00CA7B62 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				C6A18BF62B6AA52200CA7B62 /* AppDelegate.swift */,
+				C6A18BF82B6AA52200CA7B62 /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		C6A18C0B2B6C234900CA7B62 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C6A18C0C2B6C235000CA7B62 /* ViewModel */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C6A18C0C2B6C235000CA7B62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6A18C0D2B6C237700CA7B62 /* LogInViewModel.swift */,
+				C6FBCA602B6D2E0200DEA784 /* RegisterViewModel.swift */,
+				C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */,
+				C63DDD272B7137FE005A1C00 /* CuriosityViewModel.swift */,
+				C6251D042B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C6A18C0F2B6C238900CA7B62 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD292B727403005A1C00 /* Home */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C6A18C102B6C239400CA7B62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6A18BFA2B6AA52200CA7B62 /* LogIn.swift */,
+				C6FBCA5E2B6D2DE600DEA784 /* Register.swift */,
+				C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */,
+				C63DDD252B7137F4005A1C00 /* Curiosity.swift */,
+				C6251D022B73B56F001E09AE /* CuriosityPhotoDetail.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C6A18C112B6C23A000CA7B62 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD322B72983D005A1C00 /* Service */,
+				C6A18C132B6C23B800CA7B62 /* UserProcesses */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C6A18C132B6C23B800CA7B62 /* UserProcesses */ = {
+			isa = PBXGroup;
+			children = (
+				C6FBCA622B6D343400DEA784 /* UserProcesses.swift */,
+			);
+			path = UserProcesses;
+			sourceTree = "<group>";
+		};
+		C6A18C142B6C23BD00CA7B62 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD2E2B7295CE005A1C00 /* MarsRoutes.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C6A18C152B6C23E300CA7B62 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */,
+				C6FBCA5C2B6D29E300DEA784 /* Users.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C6A18C162B6C23F700CA7B62 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C6A18C2D2B6C24E900CA7B62 /* Animation.swift */,
+				C6A18C2B2B6C24D600CA7B62 /* rocket.json */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +260,20 @@
 			dependencies = (
 			);
 			name = SpaceBS;
+			packageProductDependencies = (
+				C6A18C182B6C243600CA7B62 /* Alamofire */,
+				C6A18C1B2B6C245F00CA7B62 /* Kingfisher */,
+				C6A18C1E2B6C247400CA7B62 /* Lottie */,
+				C6A18C212B6C248500CA7B62 /* RxBlocking */,
+				C6A18C232B6C248500CA7B62 /* RxBlocking-Dynamic */,
+				C6A18C252B6C248500CA7B62 /* RxCocoa */,
+				C6A18C272B6C248500CA7B62 /* RxCocoa-Dynamic */,
+				C6A18C292B6C248500CA7B62 /* RxRelay */,
+				C6A18C322B6C2AAE00CA7B62 /* FirebaseAuth */,
+				C6A18C342B6C2AAE00CA7B62 /* FirebaseDatabase */,
+				C6A18C362B6C2AAE00CA7B62 /* FirebaseFirestore */,
+				C6A18C382B6C2AAE00CA7B62 /* FirebaseStorage */,
+			);
 			productName = SpaceBS;
 			productReference = C6A18BF32B6AA52200CA7B62 /* SpaceBS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +302,13 @@
 				Base,
 			);
 			mainGroup = C6A18BEA2B6AA52200CA7B62;
+			packageReferences = (
+				C6A18C172B6C243600CA7B62 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C6A18C1A2B6C245F00CA7B62 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C6A18C1D2B6C247400CA7B62 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				C6A18C202B6C248500CA7B62 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				C6A18C312B6C2AAE00CA7B62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C6A18BF42B6AA52200CA7B62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +325,9 @@
 			files = (
 				C6A18C032B6AA52400CA7B62 /* LaunchScreen.storyboard in Resources */,
 				C6A18C002B6AA52400CA7B62 /* Assets.xcassets in Resources */,
+				C6A18C302B6C262F00CA7B62 /* GoogleService-Info.plist in Resources */,
 				C6A18BFE2B6AA52200CA7B62 /* Main.storyboard in Resources */,
+				C6A18C2C2B6C24D600CA7B62 /* rocket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +338,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A18BFB2B6AA52200CA7B62 /* ViewController.swift in Sources */,
+				C63DDD342B72984B005A1C00 /* CuriosityPhotoModel.swift in Sources */,
+				C6FBCA5F2B6D2DE600DEA784 /* Register.swift in Sources */,
+				C6FBCA612B6D2E0200DEA784 /* RegisterViewModel.swift in Sources */,
+				C6FBCA5D2B6D29E300DEA784 /* Users.swift in Sources */,
+				C6FBCA632B6D343400DEA784 /* UserProcesses.swift in Sources */,
+				C6251D052B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift in Sources */,
+				C6A18C3B2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift in Sources */,
+				C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */,
+				C6A18C0E2B6C237700CA7B62 /* LogInViewModel.swift in Sources */,
+				C6A18BFB2B6AA52200CA7B62 /* LogIn.swift in Sources */,
+				C63DDD362B729A4E005A1C00 /* MarsPhotoService.swift in Sources */,
+				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
+				C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */,
+				C63DDD2F2B7295CE005A1C00 /* MarsRoutes.swift in Sources */,
+				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,
 				C6A18BF72B6AA52200CA7B62 /* AppDelegate.swift in Sources */,
+				C6A18C2E2B6C24E900CA7B62 /* Animation.swift in Sources */,
 				C6A18BF92B6AA52200CA7B62 /* SceneDelegate.swift in Sources */,
+				C63DDD2D2B727439005A1C00 /* CollectionLayout.swift in Sources */,
+				C63DDD262B7137F4005A1C00 /* Curiosity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +580,112 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6A18C172B6C243600CA7B62 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		C6A18C1A2B6C245F00CA7B62 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
+		C6A18C1D2B6C247400CA7B62 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
+		C6A18C202B6C248500CA7B62 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		C6A18C312B6C2AAE00CA7B62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6A18C182B6C243600CA7B62 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C172B6C243600CA7B62 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C6A18C1B2B6C245F00CA7B62 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C1A2B6C245F00CA7B62 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		C6A18C1E2B6C247400CA7B62 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C1D2B6C247400CA7B62 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		C6A18C212B6C248500CA7B62 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C202B6C248500CA7B62 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		C6A18C232B6C248500CA7B62 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C202B6C248500CA7B62 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		C6A18C252B6C248500CA7B62 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C202B6C248500CA7B62 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		C6A18C272B6C248500CA7B62 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C202B6C248500CA7B62 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		C6A18C292B6C248500CA7B62 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C202B6C248500CA7B62 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		C6A18C322B6C2AAE00CA7B62 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C312B6C2AAE00CA7B62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C6A18C342B6C2AAE00CA7B62 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C312B6C2AAE00CA7B62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		C6A18C362B6C2AAE00CA7B62 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C312B6C2AAE00CA7B62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C6A18C382B6C2AAE00CA7B62 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6A18C312B6C2AAE00CA7B62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6A18BEB2B6AA52200CA7B62 /* Project object */;
 }

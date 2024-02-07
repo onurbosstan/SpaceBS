@@ -10,12 +10,12 @@ import Kingfisher
 import RxSwift
 import Alamofire
 
-class Home: UIViewController {
+class Curiosity: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    var viewModel = HomeViewModel()
+    var viewModel = CuriosityViewModel()
     var photoList = [PhotoModel]()
     let disposeBag = DisposeBag()
-    var selectedCamera: NasaCamera = .CHEMCAM
+    var selectedCamera: NasaCamera?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +23,16 @@ class Home: UIViewController {
         collectionView.dataSource = self
         collectionView.collectionViewLayout = UICollectionViewLayout()
         collectionView.collectionViewLayout = CollectionLayout(colmnsNumber: 2, minColmnsNumber: 1, minCell: 1)
+        
         Animation.showActivityIndicator()
         viewModel.photoList
                 .subscribe(onNext: { [weak self] photos in
-                    if let selectedCamera = self?.selectedCamera {
-                        self?.photoList = photos.filter { $0.camera.name == selectedCamera.rawValue }
-                    } else {
+                    if let selectedCamera = self?.selectedCamera 
+                    {
+                        self?.photoList = photos.filter { $0.camera.name == selectedCamera.rawValue
+                        }
+                    } else 
+                    {
                         self?.photoList = photos
                     }
                     self?.collectionView.reloadData()
@@ -43,7 +47,8 @@ class Home: UIViewController {
     }
     func showCameraSelectionAlert() {
             let alertController = UIAlertController(title: "Select Camera", message: nil, preferredStyle: .actionSheet)
-            for camera in NasaCamera.allCases {
+            for camera in NasaCamera.allCases 
+        {
                 let action = UIAlertAction(title: camera.rawValue, style: .default) { [weak self] _ in
                     self?.selectedCamera = camera
                     self?.viewModel.fetchMarsPhotos(forRover: "curiosity", onEarthDate: "2024-01-01")
@@ -55,18 +60,31 @@ class Home: UIViewController {
             present(alertController, animated: true, completion: nil)
         }
 }
-extension Home: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
+
+extension Curiosity: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photoList.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let mars = photoList[indexPath.row]
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCell", for: indexPath) as! HomeCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CuriosityCell", for: indexPath) as! CuriosityCell
         if let imageUrl = URL(string: mars.img_src ?? "")
         {
             cell.collectionImageView.kf.setImage(with: imageUrl)
         }
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedPhoto = photoList[indexPath.row]
+        showPhotoDetail(photo: selectedPhoto)
+    }
+    func showPhotoDetail(photo: PhotoModel) 
+    {
+        let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MarsPhotoDetail") as! CuriosityPhotoDetail
+        detailVC.photoModel = photo
+        detailVC.modalPresentationStyle = .overCurrentContext
+        detailVC.modalTransitionStyle = .crossDissolve
+        present(detailVC, animated: true, completion: nil)
+        }
 }

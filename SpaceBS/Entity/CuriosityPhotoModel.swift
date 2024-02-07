@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct MarsPhotoResponse {
-    
-}
-
 struct PhotoModel: Codable {
     let img_src: String
     let earth_date: String
@@ -35,8 +31,6 @@ enum Rover: String, Codable, CustomStringConvertible {
         return self.rawValue
     }
     case Curiosty
-    case Opportunity
-    case Spirit
 }
 
 enum NasaCamera: String, Codable, CustomStringConvertible {
@@ -55,7 +49,7 @@ enum NasaCamera: String, Codable, CustomStringConvertible {
     case MINITES
     
     static var allCases: [NasaCamera] {
-            return [.FHAZ, .RHAZ, .CHEMCAM, .MAHLI, .NAVCAM]
+        return [.FHAZ, .RHAZ, .CHEMCAM, .MAHLI, .NAVCAM]
         }
 }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Routes {
+class MarsRoutes {
     static let baseUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers/"
     static let apiKey = "w9bV3BuzX41SKbnpbwhbVeXXtxPUkxWtmhFayBz1"
 }
