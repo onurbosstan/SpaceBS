@@ -23,7 +23,7 @@ class Home: UIViewController {
         collectionView.dataSource = self
         collectionView.collectionViewLayout = UICollectionViewLayout()
         collectionView.collectionViewLayout = CollectionLayout(colmnsNumber: 2, minColmnsNumber: 1, minCell: 1)
-        
+        Animation.showActivityIndicator()
         viewModel.photoList
                 .subscribe(onNext: { [weak self] photos in
                     if let selectedCamera = self?.selectedCamera {
@@ -36,6 +36,7 @@ class Home: UIViewController {
                 .disposed(by: disposeBag)
                 
                 viewModel.fetchMarsPhotos(forRover: "curiosity", onEarthDate: "2024-01-01")
+        Animation.hideActivityIndicator()
     }
     @IBAction func menuButton(_ sender: Any) {
         showCameraSelectionAlert()

@@ -15,14 +15,17 @@ class HomeViewModel {
     let disposeBag = DisposeBag()
     
     func fetchMarsPhotos(forRover rover: String, onEarthDate earthDate: String) {
+        Animation.showActivityIndicator()
         isLoading.onNext(true)
         marsPhotoService.getMarsPhotos(forRover: rover, onEarthDate: earthDate)
             .subscribe(onNext: { [weak self] (photos: [PhotoModel]) in
                 self?.photoList.onNext(photos)
                 self?.isLoading.onNext(false)
+                Animation.hideActivityIndicator()
             }, onError: { error in
                 self.isLoading.onNext(false)
                 print("Hata: \(error)")
+                Animation.hideActivityIndicator()
             })
             .disposed(by: disposeBag)
     }
