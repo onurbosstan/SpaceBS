@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CollectionLayout: UICollectionViewFlowLayout {
+class CuriosityCollectionLayout: UICollectionViewFlowLayout {
     let colmnsNumber : Int
     var heightRatio : CGFloat = (1.0 / 1.0)
     

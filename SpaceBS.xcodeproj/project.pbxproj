@@ -12,10 +12,12 @@
 		C63DDD262B7137F4005A1C00 /* Curiosity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD252B7137F4005A1C00 /* Curiosity.swift */; };
 		C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD272B7137FE005A1C00 /* CuriosityViewModel.swift */; };
 		C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2A2B727424005A1C00 /* CuriosityCell.swift */; };
-		C63DDD2D2B727439005A1C00 /* CollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2C2B727439005A1C00 /* CollectionLayout.swift */; };
-		C63DDD2F2B7295CE005A1C00 /* MarsRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2E2B7295CE005A1C00 /* MarsRoutes.swift */; };
+		C63DDD2D2B727439005A1C00 /* CuriosityCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2C2B727439005A1C00 /* CuriosityCollectionLayout.swift */; };
+		C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */; };
 		C63DDD342B72984B005A1C00 /* CuriosityPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */; };
-		C63DDD362B729A4E005A1C00 /* MarsPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD352B729A4E005A1C00 /* MarsPhotoService.swift */; };
+		C63DDD362B729A4E005A1C00 /* CuriosityPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD352B729A4E005A1C00 /* CuriosityPhotoService.swift */; };
+		C682946F2B768F7B0020358F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682946E2B768F7B0020358F /* MenuCell.swift */; };
+		C68294712B768F8C0020358F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68294702B768F8B0020358F /* Menu.swift */; };
 		C6A18BF72B6AA52200CA7B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BF62B6AA52200CA7B62 /* AppDelegate.swift */; };
 		C6A18BF92B6AA52200CA7B62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BF82B6AA52200CA7B62 /* SceneDelegate.swift */; };
 		C6A18BFB2B6AA52200CA7B62 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BFA2B6AA52200CA7B62 /* LogIn.swift */; };
@@ -52,10 +54,12 @@
 		C63DDD252B7137F4005A1C00 /* Curiosity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curiosity.swift; sourceTree = "<group>"; };
 		C63DDD272B7137FE005A1C00 /* CuriosityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityViewModel.swift; sourceTree = "<group>"; };
 		C63DDD2A2B727424005A1C00 /* CuriosityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityCell.swift; sourceTree = "<group>"; };
-		C63DDD2C2B727439005A1C00 /* CollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLayout.swift; sourceTree = "<group>"; };
-		C63DDD2E2B7295CE005A1C00 /* MarsRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoutes.swift; sourceTree = "<group>"; };
+		C63DDD2C2B727439005A1C00 /* CuriosityCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityCollectionLayout.swift; sourceTree = "<group>"; };
+		C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityRoutes.swift; sourceTree = "<group>"; };
 		C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotoModel.swift; sourceTree = "<group>"; };
-		C63DDD352B729A4E005A1C00 /* MarsPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoService.swift; sourceTree = "<group>"; };
+		C63DDD352B729A4E005A1C00 /* CuriosityPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotoService.swift; sourceTree = "<group>"; };
+		C682946E2B768F7B0020358F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		C68294702B768F8B0020358F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		C6A18BF32B6AA52200CA7B62 /* SpaceBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A18BF62B6AA52200CA7B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6A18BF82B6AA52200CA7B62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,21 +103,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C63DDD292B727403005A1C00 /* Home */ = {
+		C63DDD292B727403005A1C00 /* CuriostyCell */ = {
 			isa = PBXGroup;
 			children = (
 				C63DDD2A2B727424005A1C00 /* CuriosityCell.swift */,
-				C63DDD2C2B727439005A1C00 /* CollectionLayout.swift */,
+				C63DDD2C2B727439005A1C00 /* CuriosityCollectionLayout.swift */,
+				C682946D2B768F680020358F /* MenuCell */,
 			);
-			path = Home;
+			path = CuriostyCell;
 			sourceTree = "<group>";
 		};
 		C63DDD322B72983D005A1C00 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C63DDD352B729A4E005A1C00 /* MarsPhotoService.swift */,
+				C63DDD352B729A4E005A1C00 /* CuriosityPhotoService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		C682946D2B768F680020358F /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				C682946E2B768F7B0020358F /* MenuCell.swift */,
+			);
+			path = MenuCell;
 			sourceTree = "<group>";
 		};
 		C6A18BEA2B6AA52200CA7B62 = {
@@ -184,7 +197,7 @@
 		C6A18C0F2B6C238900CA7B62 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C63DDD292B727403005A1C00 /* Home */,
+				C63DDD292B727403005A1C00 /* CuriostyCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 				C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */,
 				C63DDD252B7137F4005A1C00 /* Curiosity.swift */,
 				C6251D022B73B56F001E09AE /* CuriosityPhotoDetail.swift */,
+				C68294702B768F8B0020358F /* Menu.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,7 +235,7 @@
 		C6A18C142B6C23BD00CA7B62 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				C63DDD2E2B7295CE005A1C00 /* MarsRoutes.swift */,
+				C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -348,15 +362,17 @@
 				C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */,
 				C6A18C0E2B6C237700CA7B62 /* LogInViewModel.swift in Sources */,
 				C6A18BFB2B6AA52200CA7B62 /* LogIn.swift in Sources */,
-				C63DDD362B729A4E005A1C00 /* MarsPhotoService.swift in Sources */,
+				C63DDD362B729A4E005A1C00 /* CuriosityPhotoService.swift in Sources */,
 				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
 				C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */,
-				C63DDD2F2B7295CE005A1C00 /* MarsRoutes.swift in Sources */,
+				C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */,
+				C682946F2B768F7B0020358F /* MenuCell.swift in Sources */,
 				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,
+				C68294712B768F8C0020358F /* Menu.swift in Sources */,
 				C6A18BF72B6AA52200CA7B62 /* AppDelegate.swift in Sources */,
 				C6A18C2E2B6C24E900CA7B62 /* Animation.swift in Sources */,
 				C6A18BF92B6AA52200CA7B62 /* SceneDelegate.swift in Sources */,
-				C63DDD2D2B727439005A1C00 /* CollectionLayout.swift in Sources */,
+				C63DDD2D2B727439005A1C00 /* CuriosityCollectionLayout.swift in Sources */,
 				C63DDD262B7137F4005A1C00 /* Curiosity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

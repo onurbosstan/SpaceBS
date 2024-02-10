@@ -16,13 +16,14 @@ class Curiosity: UIViewController {
     var photoList = [PhotoModel]()
     let disposeBag = DisposeBag()
     var selectedCamera: NasaCamera?
-    
+    var menuViewController: Menu?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.collectionViewLayout = UICollectionViewLayout()
-        collectionView.collectionViewLayout = CollectionLayout(colmnsNumber: 2, minColmnsNumber: 1, minCell: 1)
+        collectionView.collectionViewLayout = CuriosityCollectionLayout(colmnsNumber: 2, minColmnsNumber: 1, minCell: 1)
         
         Animation.showActivityIndicator()
         viewModel.photoList
@@ -43,22 +44,18 @@ class Curiosity: UIViewController {
         Animation.hideActivityIndicator()
     }
     @IBAction func menuButton(_ sender: Any) {
-        showCameraSelectionAlert()
-    }
-    func showCameraSelectionAlert() {
-            let alertController = UIAlertController(title: "Select Camera", message: nil, preferredStyle: .actionSheet)
-            for camera in NasaCamera.allCases 
-        {
-                let action = UIAlertAction(title: camera.rawValue, style: .default) { [weak self] _ in
-                    self?.selectedCamera = camera
-                    self?.viewModel.fetchMarsPhotos(forRover: "curiosity", onEarthDate: "2024-01-01")
+        if menuViewController == nil {
+                    guard let menuVC = storyboard?.instantiateViewController(withIdentifier: "Menu") as? Menu else {
+                        return
+                    }
+            menuVC.delegate = self
+                    self.menuViewController = menuVC
+                    addChild(menuVC)
+                    view.addSubview(menuVC.view)
+                    menuVC.didMove(toParent: self)
                 }
-                alertController.addAction(action)
-            }
-            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-            alertController.addAction(cancelAction)
-            present(alertController, animated: true, completion: nil)
-        }
+                menuViewController?.showMenu()
+    }
 }
 
 extension Curiosity: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
@@ -79,7 +76,7 @@ extension Curiosity: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         let selectedPhoto = photoList[indexPath.row]
         showPhotoDetail(photo: selectedPhoto)
     }
-    func showPhotoDetail(photo: PhotoModel) 
+    func showPhotoDetail(photo: PhotoModel)
     {
         let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MarsPhotoDetail") as! CuriosityPhotoDetail
         detailVC.photoModel = photo
@@ -88,3 +85,10 @@ extension Curiosity: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         present(detailVC, animated: true, completion: nil)
         }
 }
+extension Curiosity: MenuDelegate {
+    func didSelectCamera(_ camera: NasaCamera) {
+        selectedCamera = camera
+        viewModel.fetchMarsPhotos(forRover: "curiosity", onEarthDate: "2024-01-01")
+    }
+}
+

@@ -14,14 +14,14 @@ class CuriosityPhotoService {
 
     func getMarsPhotos(forRover rover: String, onEarthDate earthDate: String) -> Observable<[PhotoModel]> {
         return Observable.create { observer in
-            guard let baseUrl = URL(string: MarsRoutes.baseUrl),
+            guard let baseUrl = URL(string: CuriosityRoutes.baseUrl),
                   let url = URL(string: rover, relativeTo: baseUrl)?.appendingPathComponent("photos") else {
                 observer.onError(NSError(domain: "RestClient", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"]))
                 return Disposables.create()
             }
             let params: [String: Any] = [
                 "earth_date": earthDate,
-                "api_key": MarsRoutes.apiKey
+                "api_key": CuriosityRoutes.apiKey
             ]
             AF.request(url, parameters: params).responseJSON { response in
                 switch response.result {

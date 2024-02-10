@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 
 class CuriosityViewModel {
-    var marsPhotoService = MarsPhotoService()
+    var marsPhotoService = CuriosityPhotoService()
     var photoList = BehaviorSubject<[PhotoModel]>(value: [])
     var isLoading = BehaviorSubject<Bool>(value: false)
     let disposeBag = DisposeBag()

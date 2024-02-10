@@ -30,7 +30,7 @@ enum Rover: String, Codable, CustomStringConvertible {
     var description: String {
         return self.rawValue
     }
-    case Curiosty
+    case Curiosity
 }
 
 enum NasaCamera: String, Codable, CustomStringConvertible {
