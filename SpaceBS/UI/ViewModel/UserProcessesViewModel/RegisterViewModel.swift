@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+    
 class RegisterViewModel {
     var userData = UserProcesses()
     func signUp(email: String, password: String, completion: @escaping (Bool) -> Void)
@@ -15,5 +15,4 @@ class RegisterViewModel {
             completion(result)
         }
     }
-    
 }
