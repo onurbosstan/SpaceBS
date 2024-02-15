@@ -29,5 +29,4 @@ class CuriosityViewModel {
             })
             .disposed(by: disposeBag)
     }
-
 }

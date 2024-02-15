@@ -9,5 +9,5 @@ import Foundation
 
 class CuriosityRoutes {
     static let baseUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers/"
-    static let apiKey = "w9bV3BuzX41SKbnpbwhbVeXXtxPUkxWtmhFayBz1"
+    static let apiKey = "aOfEDVI7PwALnRXXuL6t7zFY4FazKxjQkc0TvHg9"
 }

@@ -16,6 +16,11 @@
 		C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */; };
 		C63DDD342B72984B005A1C00 /* CuriosityPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */; };
 		C63DDD362B729A4E005A1C00 /* CuriosityPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD352B729A4E005A1C00 /* CuriosityPhotoService.swift */; };
+		C6563E3F2B7BCAD1008FF981 /* MarsWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6563E3E2B7BCAD1008FF981 /* MarsWeatherService.swift */; };
+		C6563E412B7BCADC008FF981 /* MarsWeatherRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6563E402B7BCADC008FF981 /* MarsWeatherRoutes.swift */; };
+		C6600A322B7A3D4100B46AD8 /* MarsWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6600A312B7A3D4000B46AD8 /* MarsWeatherModel.swift */; };
+		C6600A342B7A8BB000B46AD8 /* MarsWeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6600A332B7A8BB000B46AD8 /* MarsWeatherDetail.swift */; };
+		C6600A362B7A8BC900B46AD8 /* MarsWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6600A352B7A8BC900B46AD8 /* MarsWeatherViewModel.swift */; };
 		C682946F2B768F7B0020358F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682946E2B768F7B0020358F /* MenuCell.swift */; };
 		C68294712B768F8C0020358F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68294702B768F8B0020358F /* Menu.swift */; };
 		C6A18BF72B6AA52200CA7B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BF62B6AA52200CA7B62 /* AppDelegate.swift */; };
@@ -39,7 +44,6 @@
 		C6A18C332B6C2AAE00CA7B62 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C322B6C2AAE00CA7B62 /* FirebaseAuth */; };
 		C6A18C352B6C2AAE00CA7B62 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C342B6C2AAE00CA7B62 /* FirebaseDatabase */; };
 		C6A18C372B6C2AAE00CA7B62 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C362B6C2AAE00CA7B62 /* FirebaseFirestore */; };
-		C6A18C392B6C2AAE00CA7B62 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C382B6C2AAE00CA7B62 /* FirebaseStorage */; };
 		C6A18C3B2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */; };
 		C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */; };
 		C6FBCA5D2B6D29E300DEA784 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA5C2B6D29E300DEA784 /* Users.swift */; };
@@ -58,6 +62,11 @@
 		C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityRoutes.swift; sourceTree = "<group>"; };
 		C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotoModel.swift; sourceTree = "<group>"; };
 		C63DDD352B729A4E005A1C00 /* CuriosityPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotoService.swift; sourceTree = "<group>"; };
+		C6563E3E2B7BCAD1008FF981 /* MarsWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherService.swift; sourceTree = "<group>"; };
+		C6563E402B7BCADC008FF981 /* MarsWeatherRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherRoutes.swift; sourceTree = "<group>"; };
+		C6600A312B7A3D4000B46AD8 /* MarsWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherModel.swift; sourceTree = "<group>"; };
+		C6600A332B7A8BB000B46AD8 /* MarsWeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherDetail.swift; sourceTree = "<group>"; };
+		C6600A352B7A8BC900B46AD8 /* MarsWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherViewModel.swift; sourceTree = "<group>"; };
 		C682946E2B768F7B0020358F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C68294702B768F8B0020358F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		C6A18BF32B6AA52200CA7B62 /* SpaceBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +99,6 @@
 				C6A18C282B6C248500CA7B62 /* RxCocoa-Dynamic in Frameworks */,
 				C6A18C1C2B6C245F00CA7B62 /* Kingfisher in Frameworks */,
 				C6A18C222B6C248500CA7B62 /* RxBlocking in Frameworks */,
-				C6A18C392B6C2AAE00CA7B62 /* FirebaseStorage in Frameworks */,
 				C6A18C332B6C2AAE00CA7B62 /* FirebaseAuth in Frameworks */,
 				C6A18C192B6C243600CA7B62 /* Alamofire in Frameworks */,
 				C6A18C1F2B6C247400CA7B62 /* Lottie in Frameworks */,
@@ -108,7 +116,7 @@
 			children = (
 				C63DDD2A2B727424005A1C00 /* CuriosityCell.swift */,
 				C63DDD2C2B727439005A1C00 /* CuriosityCollectionLayout.swift */,
-				C682946D2B768F680020358F /* MenuCell */,
+				C682946E2B768F7B0020358F /* MenuCell.swift */,
 			);
 			path = CuriostyCell;
 			sourceTree = "<group>";
@@ -117,16 +125,66 @@
 			isa = PBXGroup;
 			children = (
 				C63DDD352B729A4E005A1C00 /* CuriosityPhotoService.swift */,
+				C6563E3E2B7BCAD1008FF981 /* MarsWeatherService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		C682946D2B768F680020358F /* MenuCell */ = {
+		C6563E422B7BD7CC008FF981 /* UsersEntity */ = {
 			isa = PBXGroup;
 			children = (
-				C682946E2B768F7B0020358F /* MenuCell.swift */,
+				C6FBCA5C2B6D29E300DEA784 /* Users.swift */,
 			);
-			path = MenuCell;
+			path = UsersEntity;
+			sourceTree = "<group>";
+		};
+		C6563E432B7BD7D8008FF981 /* APIEntity */ = {
+			isa = PBXGroup;
+			children = (
+				C6BB307A2B7E58D40040E615 /* CuriosityEntity */,
+			);
+			path = APIEntity;
+			sourceTree = "<group>";
+		};
+		C68294722B77B41F0020358F /* CuriosityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD252B7137F4005A1C00 /* Curiosity.swift */,
+				C6251D022B73B56F001E09AE /* CuriosityPhotoDetail.swift */,
+				C6600A332B7A8BB000B46AD8 /* MarsWeatherDetail.swift */,
+				C68294702B768F8B0020358F /* Menu.swift */,
+			);
+			path = CuriosityViewController;
+			sourceTree = "<group>";
+		};
+		C68294732B77B4470020358F /* UserProcessesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6A18BFA2B6AA52200CA7B62 /* LogIn.swift */,
+				C6FBCA5E2B6D2DE600DEA784 /* Register.swift */,
+				C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */,
+			);
+			path = UserProcessesViewController;
+			sourceTree = "<group>";
+		};
+		C68294742B77B4660020358F /* UserProcessesViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6A18C0D2B6C237700CA7B62 /* LogInViewModel.swift */,
+				C6FBCA602B6D2E0200DEA784 /* RegisterViewModel.swift */,
+				C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */,
+			);
+			path = UserProcessesViewModel;
+			sourceTree = "<group>";
+		};
+		C68294752B77B4710020358F /* CuriosityViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD272B7137FE005A1C00 /* CuriosityViewModel.swift */,
+				C6251D042B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift */,
+				C6600A352B7A8BC900B46AD8 /* MarsWeatherViewModel.swift */,
+			);
+			path = CuriosityViewModels;
 			sourceTree = "<group>";
 		};
 		C6A18BEA2B6AA52200CA7B62 = {
@@ -185,11 +243,8 @@
 		C6A18C0C2B6C235000CA7B62 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C6A18C0D2B6C237700CA7B62 /* LogInViewModel.swift */,
-				C6FBCA602B6D2E0200DEA784 /* RegisterViewModel.swift */,
-				C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */,
-				C63DDD272B7137FE005A1C00 /* CuriosityViewModel.swift */,
-				C6251D042B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift */,
+				C68294742B77B4660020358F /* UserProcessesViewModel */,
+				C68294752B77B4710020358F /* CuriosityViewModels */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -205,12 +260,8 @@
 		C6A18C102B6C239400CA7B62 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6A18BFA2B6AA52200CA7B62 /* LogIn.swift */,
-				C6FBCA5E2B6D2DE600DEA784 /* Register.swift */,
-				C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */,
-				C63DDD252B7137F4005A1C00 /* Curiosity.swift */,
-				C6251D022B73B56F001E09AE /* CuriosityPhotoDetail.swift */,
-				C68294702B768F8B0020358F /* Menu.swift */,
+				C68294732B77B4470020358F /* UserProcessesViewController */,
+				C68294722B77B41F0020358F /* CuriosityViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -235,7 +286,7 @@
 		C6A18C142B6C23BD00CA7B62 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */,
+				C6E8A3342B7E4AF900FDC70A /* CuriosityAPI */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -243,8 +294,8 @@
 		C6A18C152B6C23E300CA7B62 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */,
-				C6FBCA5C2B6D29E300DEA784 /* Users.swift */,
+				C6563E432B7BD7D8008FF981 /* APIEntity */,
+				C6563E422B7BD7CC008FF981 /* UsersEntity */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -256,6 +307,24 @@
 				C6A18C2B2B6C24D600CA7B62 /* rocket.json */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		C6BB307A2B7E58D40040E615 /* CuriosityEntity */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */,
+				C6600A312B7A3D4000B46AD8 /* MarsWeatherModel.swift */,
+			);
+			path = CuriosityEntity;
+			sourceTree = "<group>";
+		};
+		C6E8A3342B7E4AF900FDC70A /* CuriosityAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */,
+				C6563E402B7BCADC008FF981 /* MarsWeatherRoutes.swift */,
+			);
+			path = CuriosityAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +355,6 @@
 				C6A18C322B6C2AAE00CA7B62 /* FirebaseAuth */,
 				C6A18C342B6C2AAE00CA7B62 /* FirebaseDatabase */,
 				C6A18C362B6C2AAE00CA7B62 /* FirebaseFirestore */,
-				C6A18C382B6C2AAE00CA7B62 /* FirebaseStorage */,
 			);
 			productName = SpaceBS;
 			productReference = C6A18BF32B6AA52200CA7B62 /* SpaceBS.app */;
@@ -352,6 +420,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6563E412B7BCADC008FF981 /* MarsWeatherRoutes.swift in Sources */,
+				C6600A342B7A8BB000B46AD8 /* MarsWeatherDetail.swift in Sources */,
+				C6563E3F2B7BCAD1008FF981 /* MarsWeatherService.swift in Sources */,
+				C6600A322B7A3D4100B46AD8 /* MarsWeatherModel.swift in Sources */,
 				C63DDD342B72984B005A1C00 /* CuriosityPhotoModel.swift in Sources */,
 				C6FBCA5F2B6D2DE600DEA784 /* Register.swift in Sources */,
 				C6FBCA612B6D2E0200DEA784 /* RegisterViewModel.swift in Sources */,
@@ -365,6 +437,7 @@
 				C63DDD362B729A4E005A1C00 /* CuriosityPhotoService.swift in Sources */,
 				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
 				C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */,
+				C6600A362B7A8BC900B46AD8 /* MarsWeatherViewModel.swift in Sources */,
 				C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */,
 				C682946F2B768F7B0020358F /* MenuCell.swift in Sources */,
 				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,
@@ -695,11 +768,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C6A18C312B6C2AAE00CA7B62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
-		};
-		C6A18C382B6C2AAE00CA7B62 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C6A18C312B6C2AAE00CA7B62 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
