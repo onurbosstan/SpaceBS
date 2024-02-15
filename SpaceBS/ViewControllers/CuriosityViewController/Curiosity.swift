@@ -12,6 +12,7 @@ import Alamofire
 
 class Curiosity: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var marsWeatherImageView: UIImageView!
     var viewModel = CuriosityViewModel()
     var photoList = [PhotoModel]()
     let disposeBag = DisposeBag()
@@ -20,6 +21,7 @@ class Curiosity: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        marsWeatherImageView.layer.cornerRadius = 4
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.collectionViewLayout = UICollectionViewLayout()
@@ -39,12 +41,24 @@ class Curiosity: UIViewController {
                     self?.collectionView.reloadData()
                 })
                 .disposed(by: disposeBag)
-                
-                viewModel.fetchMarsPhotos(forRover: "curiosity", onEarthDate: "2024-01-01")
+        viewModel.fetchMarsPhotos(forRover: "curiosity", onEarthDate: "2024-01-01")
         Animation.hideActivityIndicator()
+        
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleWeatherImageTap))
+        marsWeatherImageView.addGestureRecognizer(tapGesture)
+        marsWeatherImageView.isUserInteractionEnabled = true
     }
+    @objc func handleWeatherImageTap() {
+        let marsWeatherDetailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MarsWeatherDetail") as! MarsWeatherDetail
+        marsWeatherDetailVC.modalPresentationStyle = .overCurrentContext
+        marsWeatherDetailVC.modalTransitionStyle = .crossDissolve
+        present(marsWeatherDetailVC, animated: true, completion: nil)
+        }
+    
     @IBAction func menuButton(_ sender: Any) {
-        if menuViewController == nil {
+        if menuViewController == nil 
+        {
                     guard let menuVC = storyboard?.instantiateViewController(withIdentifier: "Menu") as? Menu else {
                         return
                     }
@@ -57,7 +71,6 @@ class Curiosity: UIViewController {
                 menuViewController?.showMenu()
     }
 }
-
 extension Curiosity: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
