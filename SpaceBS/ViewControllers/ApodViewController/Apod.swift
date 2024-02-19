@@ -8,22 +8,32 @@
 import UIKit
 
 class Apod: UIViewController {
-
+    @IBOutlet weak var tableView: UITableView!
+    
+    let apodData = [
+        ("Astronomy Picture of the Day", "A different astronomy and space science related image is featured each day, along with a brief explanation."),
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension Apod: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return apodData.count
     }
-    */
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ApodCell", for: indexPath) as! ApodCell
+              let (apodTitle, apodDescription) = apodData[indexPath.row]
+              
+              cell.apodLabel.text = apodTitle
+              cell.titleLabel.text = apodDescription
+              
+              return cell
+    }
 }

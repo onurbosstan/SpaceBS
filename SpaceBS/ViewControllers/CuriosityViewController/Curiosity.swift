@@ -44,7 +44,6 @@ class Curiosity: UIViewController {
         viewModel.fetchMarsPhotos(forRover: "curiosity", onEarthDate: "2024-01-01")
         Animation.hideActivityIndicator()
         
-        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleWeatherImageTap))
         marsWeatherImageView.addGestureRecognizer(tapGesture)
         marsWeatherImageView.isUserInteractionEnabled = true
