@@ -16,7 +16,7 @@ class Curiosity: UIViewController {
     var viewModel = CuriosityViewModel()
     var photoList = [PhotoModel]()
     let disposeBag = DisposeBag()
-    var selectedCamera: NasaCamera?
+    var selectedCamera: NasaCamera? = .NAVCAM
     var menuViewController: Menu?
 
     override func viewDidLoad() {

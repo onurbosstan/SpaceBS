@@ -22,9 +22,6 @@ class Epic: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.layer.cornerRadius = 4
-        epicImageView.layer.borderWidth = 2.0
-        epicImageView.layer.borderColor = UIColor.systemGray.cgColor
-        epicImageView.layer.cornerRadius = 25
         showLoadingAnimation()
         bindViewModel()
         

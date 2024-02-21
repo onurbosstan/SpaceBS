@@ -32,7 +32,10 @@
 		C66638222B821E1B00F1C1CD /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66638212B821E1B00F1C1CD /* Apod.swift */; };
 		C682946F2B768F7B0020358F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682946E2B768F7B0020358F /* MenuCell.swift */; };
 		C68294712B768F8C0020358F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68294702B768F8B0020358F /* Menu.swift */; };
-		C68C69BE2B83D7E2003400E7 /* ApodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69BD2B83D7E2003400E7 /* ApodCell.swift */; };
+		C68C69C02B83E23C003400E7 /* ApodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69BF2B83E23C003400E7 /* ApodDetail.swift */; };
+		C68C69C32B83E256003400E7 /* ApodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69C22B83E256003400E7 /* ApodViewModel.swift */; };
+		C68C69C62B83E273003400E7 /* ApodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69C52B83E273003400E7 /* ApodService.swift */; };
+		C68C69C82B83E455003400E7 /* ApodDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69C72B83E455003400E7 /* ApodDetailViewModel.swift */; };
 		C6A18BF72B6AA52200CA7B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BF62B6AA52200CA7B62 /* AppDelegate.swift */; };
 		C6A18BF92B6AA52200CA7B62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BF82B6AA52200CA7B62 /* SceneDelegate.swift */; };
 		C6A18BFB2B6AA52200CA7B62 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18BFA2B6AA52200CA7B62 /* LogIn.swift */; };
@@ -56,6 +59,7 @@
 		C6A18C372B6C2AAE00CA7B62 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C362B6C2AAE00CA7B62 /* FirebaseFirestore */; };
 		C6A18C3B2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */; };
 		C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */; };
+		C6EAB6092B861ED9000B2A6D /* ApodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EAB6082B861ED9000B2A6D /* ApodCell.swift */; };
 		C6FBCA5D2B6D29E300DEA784 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA5C2B6D29E300DEA784 /* Users.swift */; };
 		C6FBCA5F2B6D2DE600DEA784 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA5E2B6D2DE600DEA784 /* Register.swift */; };
 		C6FBCA612B6D2E0200DEA784 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA602B6D2E0200DEA784 /* RegisterViewModel.swift */; };
@@ -88,7 +92,10 @@
 		C66638212B821E1B00F1C1CD /* Apod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
 		C682946E2B768F7B0020358F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C68294702B768F8B0020358F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		C68C69BD2B83D7E2003400E7 /* ApodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodCell.swift; sourceTree = "<group>"; };
+		C68C69BF2B83E23C003400E7 /* ApodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDetail.swift; sourceTree = "<group>"; };
+		C68C69C22B83E256003400E7 /* ApodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModel.swift; sourceTree = "<group>"; };
+		C68C69C52B83E273003400E7 /* ApodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodService.swift; sourceTree = "<group>"; };
+		C68C69C72B83E455003400E7 /* ApodDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDetailViewModel.swift; sourceTree = "<group>"; };
 		C6A18BF32B6AA52200CA7B62 /* SpaceBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A18BF62B6AA52200CA7B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6A18BF82B6AA52200CA7B62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +110,7 @@
 		C6A18C2F2B6C262F00CA7B62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		C6EAB6082B861ED9000B2A6D /* ApodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodCell.swift; sourceTree = "<group>"; };
 		C6FBCA5C2B6D29E300DEA784 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		C6FBCA5E2B6D2DE600DEA784 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		C6FBCA602B6D2E0200DEA784 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -197,6 +205,7 @@
 				C6A18C132B6C23B800CA7B62 /* UserProcesses */,
 				C626FF6B2B7EBDEB0025A215 /* CuriosityService */,
 				C626FF6C2B7EBDFA0025A215 /* EpicService */,
+				C68C69C42B83E25D003400E7 /* ApodService */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -239,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				C66638212B821E1B00F1C1CD /* Apod.swift */,
+				C68C69BF2B83E23C003400E7 /* ApodDetail.swift */,
 			);
 			path = ApodViewController;
 			sourceTree = "<group>";
@@ -284,12 +294,21 @@
 			path = CuriosityViewModels;
 			sourceTree = "<group>";
 		};
-		C68C69BC2B83D7D0003400E7 /* ApodCell */ = {
+		C68C69C12B83E249003400E7 /* ApodViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C68C69BD2B83D7E2003400E7 /* ApodCell.swift */,
+				C68C69C22B83E256003400E7 /* ApodViewModel.swift */,
+				C68C69C72B83E455003400E7 /* ApodDetailViewModel.swift */,
 			);
-			path = ApodCell;
+			path = ApodViewModel;
+			sourceTree = "<group>";
+		};
+		C68C69C42B83E25D003400E7 /* ApodService */ = {
+			isa = PBXGroup;
+			children = (
+				C68C69C52B83E273003400E7 /* ApodService.swift */,
+			);
+			path = ApodService;
 			sourceTree = "<group>";
 		};
 		C6A18BEA2B6AA52200CA7B62 = {
@@ -351,6 +370,7 @@
 				C68294742B77B4660020358F /* UserProcessesViewModel */,
 				C68294752B77B4710020358F /* CuriosityViewModels */,
 				C626FF682B7EBDCB0025A215 /* EpicViewModel */,
+				C68C69C12B83E249003400E7 /* ApodViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -359,7 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				C63DDD292B727403005A1C00 /* CuriostyCell */,
-				C68C69BC2B83D7D0003400E7 /* ApodCell */,
+				C6EAB6052B861EBA000B2A6D /* ApodCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -435,6 +455,14 @@
 				C6563E402B7BCADC008FF981 /* MarsWeatherRoutes.swift */,
 			);
 			path = CuriosityAPI;
+			sourceTree = "<group>";
+		};
+		C6EAB6052B861EBA000B2A6D /* ApodCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6EAB6082B861ED9000B2A6D /* ApodCell.swift */,
+			);
+			path = ApodCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,6 +559,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C626FF732B7EC2D10025A215 /* EpicDetail.swift in Sources */,
+				C68C69C32B83E256003400E7 /* ApodViewModel.swift in Sources */,
 				C626FF642B7EBC750025A215 /* EpicModel.swift in Sources */,
 				C6563E412B7BCADC008FF981 /* MarsWeatherRoutes.swift in Sources */,
 				C6600A342B7A8BB000B46AD8 /* MarsWeatherDetail.swift in Sources */,
@@ -546,17 +575,19 @@
 				C6251D052B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift in Sources */,
 				C6A18C3B2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift in Sources */,
 				C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */,
+				C68C69C62B83E273003400E7 /* ApodService.swift in Sources */,
 				C626FF712B7EBE390025A215 /* EpicRoutes.swift in Sources */,
 				C6A18C0E2B6C237700CA7B62 /* LogInViewModel.swift in Sources */,
+				C68C69C02B83E23C003400E7 /* ApodDetail.swift in Sources */,
 				C666381C2B821CDC00F1C1CD /* ApodModel.swift in Sources */,
 				C626FF672B7EBDBC0025A215 /* Epic.swift in Sources */,
 				C6A18BFB2B6AA52200CA7B62 /* LogIn.swift in Sources */,
+				C6EAB6092B861ED9000B2A6D /* ApodCell.swift in Sources */,
 				C63DDD362B729A4E005A1C00 /* CuriosityPhotoService.swift in Sources */,
 				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
 				C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */,
 				C626FF6A2B7EBDDC0025A215 /* EpicViewModel.swift in Sources */,
 				C6600A362B7A8BC900B46AD8 /* MarsWeatherViewModel.swift in Sources */,
-				C68C69BE2B83D7E2003400E7 /* ApodCell.swift in Sources */,
 				C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */,
 				C682946F2B768F7B0020358F /* MenuCell.swift in Sources */,
 				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,
@@ -564,6 +595,7 @@
 				C6A18BF72B6AA52200CA7B62 /* AppDelegate.swift in Sources */,
 				C6A18C2E2B6C24E900CA7B62 /* Animation.swift in Sources */,
 				C6A18BF92B6AA52200CA7B62 /* SceneDelegate.swift in Sources */,
+				C68C69C82B83E455003400E7 /* ApodDetailViewModel.swift in Sources */,
 				C66638222B821E1B00F1C1CD /* Apod.swift in Sources */,
 				C63DDD2D2B727439005A1C00 /* CuriosityCollectionLayout.swift in Sources */,
 				C63DDD262B7137F4005A1C00 /* Curiosity.swift in Sources */,

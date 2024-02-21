@@ -11,8 +11,16 @@ struct ApodModel: Codable {
     let date: String
     let explanation: String
     let hdurl: String
-    let media_type: String
-    let service_version : String
+    let mediaType: String
+    let serviceVersion: String
     let title: String
     let url: String
+
+    enum CodingKeys: String, CodingKey {
+        case date, explanation, hdurl
+        case mediaType = "media_type"
+        case serviceVersion = "service_version"
+        case title, url
+    }
 }
+

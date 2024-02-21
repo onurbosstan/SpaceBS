@@ -6,34 +6,53 @@
 //
 
 import UIKit
+import RxSwift
 
 class Apod: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var tableView: UITableView!
-    
-    let apodData = [
-        ("Astronomy Picture of the Day", "A different astronomy and space science related image is featured each day, along with a brief explanation."),
-    ]
+    var viewModel: ApodViewModel!
+    var imageViews = [UIImageView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        scrollView.delegate = self
+        scrollView.isPagingEnabled = true
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.isDirectionalLockEnabled = true
+        scrollView.layer.cornerRadius = 8
+        
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.isScrollEnabled = true
+        tableView.isUserInteractionEnabled = true
+        
+        let viewModel = ApodViewModel()
+        self.viewModel = viewModel
+        viewModel.addImagesToScrollView(scrollView: scrollView)
     }
 }
 
 extension Apod: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return apodData.count
+        return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ApodCell", for: indexPath) as! ApodCell
-              let (apodTitle, apodDescription) = apodData[indexPath.row]
-              
-              cell.apodLabel.text = apodTitle
-              cell.titleLabel.text = apodDescription
-              
-              return cell
+        cell.apodLabel.text = viewModel.apodText
+        cell.isUserInteractionEnabled = false
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 800
     }
 }
+
+extension Apod: UIScrollViewDelegate {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageIndex = round(scrollView.contentOffset.x / scrollView.frame.size.width)
+        scrollView.setContentOffset(CGPoint(x: pageIndex * scrollView.frame.size.width, y: 0), animated: true)
+    }
+}
+
+
