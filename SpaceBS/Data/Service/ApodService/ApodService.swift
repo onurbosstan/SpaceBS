@@ -10,19 +10,16 @@ import Alamofire
 import RxSwift
 
 class ApodService {
-    func getApodData() -> Observable<ApodModel> {
+    static let shared = ApodService()
+    
+    func fetchApod() -> Observable<ApodModel> {
         return Observable.create { observer in
-            let requestUrl = "\(ApodRoutes.baseUrl)apod?api_key=\(ApodRoutes.apiKey)"
-            AF.request(requestUrl).responseData { response in
+            let url = "\(ApodRoutes.baseUrl)apod?api_key=\(ApodRoutes.apiKey)"
+            AF.request(url).responseDecodable(of: ApodModel.self) { response in
                 switch response.result {
-                case .success(let data):
-                    do {
-                        let apodData = try JSONDecoder().decode(ApodModel.self, from: data)
-                        observer.onNext(apodData)
-                        observer.onCompleted()
-                    } catch {
-                        observer.onError(error)
-                    }
+                case .success(let apod):
+                    observer.onNext(apod)
+                    observer.onCompleted()
                 case .failure(let error):
                     observer.onError(error)
                 }
@@ -31,7 +28,4 @@ class ApodService {
         }
     }
 }
-
-
-
 

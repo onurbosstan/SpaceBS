@@ -30,7 +30,17 @@ class Apod: UIViewController {
         let viewModel = ApodViewModel()
         self.viewModel = viewModel
         viewModel.addImagesToScrollView(scrollView: scrollView)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleWeatherImageTap))
+        scrollView.addGestureRecognizer(tapGesture)
+        scrollView.isUserInteractionEnabled = true
     }
+    @objc func handleWeatherImageTap() {
+        let apodDetailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ApodDetail") as! ApodDetail
+        apodDetailVC.modalPresentationStyle = .overCurrentContext
+        apodDetailVC.modalTransitionStyle = .crossDissolve
+        present(apodDetailVC, animated: true, completion: nil)
+        }
 }
 
 extension Apod: UITableViewDelegate, UITableViewDataSource {
@@ -54,5 +64,3 @@ extension Apod: UIScrollViewDelegate {
         scrollView.setContentOffset(CGPoint(x: pageIndex * scrollView.frame.size.width, y: 0), animated: true)
     }
 }
-
-
