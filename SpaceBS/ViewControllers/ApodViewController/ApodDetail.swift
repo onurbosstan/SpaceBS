@@ -46,9 +46,8 @@ class ApodDetail: UIViewController {
         }
         dateLabel.text = apod.date
         titleLabel.text = apod.title
-        explanationLabel.text = apod.explanation
+        explanationLabel.text = "💬\(apod.explanation)"
     }
-    
     @objc func closeAction(sender : UITapGestureRecognizer) {
         self.dismiss(animated: true, completion: nil)
     }

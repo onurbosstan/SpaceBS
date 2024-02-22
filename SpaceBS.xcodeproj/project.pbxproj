@@ -22,11 +22,6 @@
 		C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */; };
 		C63DDD342B72984B005A1C00 /* CuriosityPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */; };
 		C63DDD362B729A4E005A1C00 /* CuriosityPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63DDD352B729A4E005A1C00 /* CuriosityPhotoService.swift */; };
-		C6563E3F2B7BCAD1008FF981 /* MarsWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6563E3E2B7BCAD1008FF981 /* MarsWeatherService.swift */; };
-		C6563E412B7BCADC008FF981 /* MarsWeatherRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6563E402B7BCADC008FF981 /* MarsWeatherRoutes.swift */; };
-		C6600A322B7A3D4100B46AD8 /* MarsWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6600A312B7A3D4000B46AD8 /* MarsWeatherModel.swift */; };
-		C6600A342B7A8BB000B46AD8 /* MarsWeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6600A332B7A8BB000B46AD8 /* MarsWeatherDetail.swift */; };
-		C6600A362B7A8BC900B46AD8 /* MarsWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6600A352B7A8BC900B46AD8 /* MarsWeatherViewModel.swift */; };
 		C666381C2B821CDC00F1C1CD /* ApodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666381B2B821CDC00F1C1CD /* ApodModel.swift */; };
 		C666381F2B821D9800F1C1CD /* ApodRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666381E2B821D9800F1C1CD /* ApodRoutes.swift */; };
 		C66638222B821E1B00F1C1CD /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66638212B821E1B00F1C1CD /* Apod.swift */; };
@@ -82,11 +77,6 @@
 		C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityRoutes.swift; sourceTree = "<group>"; };
 		C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotoModel.swift; sourceTree = "<group>"; };
 		C63DDD352B729A4E005A1C00 /* CuriosityPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotoService.swift; sourceTree = "<group>"; };
-		C6563E3E2B7BCAD1008FF981 /* MarsWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherService.swift; sourceTree = "<group>"; };
-		C6563E402B7BCADC008FF981 /* MarsWeatherRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherRoutes.swift; sourceTree = "<group>"; };
-		C6600A312B7A3D4000B46AD8 /* MarsWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherModel.swift; sourceTree = "<group>"; };
-		C6600A332B7A8BB000B46AD8 /* MarsWeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherDetail.swift; sourceTree = "<group>"; };
-		C6600A352B7A8BC900B46AD8 /* MarsWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsWeatherViewModel.swift; sourceTree = "<group>"; };
 		C666381B2B821CDC00F1C1CD /* ApodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodModel.swift; sourceTree = "<group>"; };
 		C666381E2B821D9800F1C1CD /* ApodRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodRoutes.swift; sourceTree = "<group>"; };
 		C66638212B821E1B00F1C1CD /* Apod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
@@ -168,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				C63DDD352B729A4E005A1C00 /* CuriosityPhotoService.swift */,
-				C6563E3E2B7BCAD1008FF981 /* MarsWeatherService.swift */,
 			);
 			path = CuriosityService;
 			sourceTree = "<group>";
@@ -258,7 +247,6 @@
 			children = (
 				C63DDD252B7137F4005A1C00 /* Curiosity.swift */,
 				C6251D022B73B56F001E09AE /* CuriosityPhotoDetail.swift */,
-				C6600A332B7A8BB000B46AD8 /* MarsWeatherDetail.swift */,
 				C68294702B768F8B0020358F /* Menu.swift */,
 			);
 			path = CuriosityViewController;
@@ -289,7 +277,6 @@
 			children = (
 				C63DDD272B7137FE005A1C00 /* CuriosityViewModel.swift */,
 				C6251D042B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift */,
-				C6600A352B7A8BC900B46AD8 /* MarsWeatherViewModel.swift */,
 			);
 			path = CuriosityViewModels;
 			sourceTree = "<group>";
@@ -443,7 +430,6 @@
 			isa = PBXGroup;
 			children = (
 				C63DDD332B72984B005A1C00 /* CuriosityPhotoModel.swift */,
-				C6600A312B7A3D4000B46AD8 /* MarsWeatherModel.swift */,
 			);
 			path = CuriosityEntity;
 			sourceTree = "<group>";
@@ -452,7 +438,6 @@
 			isa = PBXGroup;
 			children = (
 				C63DDD2E2B7295CE005A1C00 /* CuriosityRoutes.swift */,
-				C6563E402B7BCADC008FF981 /* MarsWeatherRoutes.swift */,
 			);
 			path = CuriosityAPI;
 			sourceTree = "<group>";
@@ -561,11 +546,7 @@
 				C626FF732B7EC2D10025A215 /* EpicDetail.swift in Sources */,
 				C68C69C32B83E256003400E7 /* ApodViewModel.swift in Sources */,
 				C626FF642B7EBC750025A215 /* EpicModel.swift in Sources */,
-				C6563E412B7BCADC008FF981 /* MarsWeatherRoutes.swift in Sources */,
-				C6600A342B7A8BB000B46AD8 /* MarsWeatherDetail.swift in Sources */,
-				C6563E3F2B7BCAD1008FF981 /* MarsWeatherService.swift in Sources */,
 				C626FF6E2B7EBE120025A215 /* EpicService.swift in Sources */,
-				C6600A322B7A3D4100B46AD8 /* MarsWeatherModel.swift in Sources */,
 				C63DDD342B72984B005A1C00 /* CuriosityPhotoModel.swift in Sources */,
 				C666381F2B821D9800F1C1CD /* ApodRoutes.swift in Sources */,
 				C6FBCA5F2B6D2DE600DEA784 /* Register.swift in Sources */,
@@ -587,7 +568,6 @@
 				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
 				C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */,
 				C626FF6A2B7EBDDC0025A215 /* EpicViewModel.swift in Sources */,
-				C6600A362B7A8BC900B46AD8 /* MarsWeatherViewModel.swift in Sources */,
 				C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */,
 				C682946F2B768F7B0020358F /* MenuCell.swift in Sources */,
 				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,

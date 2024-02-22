@@ -61,7 +61,7 @@ class Epic: UIViewController {
                     self.xLabel.text = "X➡️: \(firstImage.coords.dscovr_j2000_position.x)"
                     self.yLabel.text = "Y⬆️: \(firstImage.coords.dscovr_j2000_position.y)"
                     self.zLabel.text = "Z🔁: \(firstImage.coords.dscovr_j2000_position.z)"
-                    self.dateLabel.text = "🔭Date: \(firstImage.date)"
+                    self.dateLabel.text = "📆Date: \(firstImage.date)"
                 }
             }, onError: 
                     { error in
