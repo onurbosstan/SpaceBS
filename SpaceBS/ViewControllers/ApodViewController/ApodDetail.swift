@@ -16,6 +16,7 @@ class ApodDetail: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var explanationLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     var viewModel = ApodDetailViewModel()
     private let disposeBag = DisposeBag()
     
@@ -47,6 +48,8 @@ class ApodDetail: UIViewController {
         dateLabel.text = apod.date
         titleLabel.text = apod.title
         explanationLabel.text = "💬\(apod.explanation)"
+        explanationLabel.sizeToFit()
+        scrollView.bottomAnchor.constraint(equalTo: explanationLabel.bottomAnchor).isActive = true
     }
     @objc func closeAction(sender : UITapGestureRecognizer) {
         self.dismiss(animated: true, completion: nil)
