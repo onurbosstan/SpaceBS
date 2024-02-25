@@ -45,7 +45,7 @@ class ApodDetail: UIViewController {
         if let url = URL(string: apod.hdurl) {
             imageView.kf.setImage(with: url)
         }
-        dateLabel.text = apod.date
+        dateLabel.text = "📆\(apod.date)"
         titleLabel.text = apod.title
         explanationLabel.text = "💬\(apod.explanation)"
         explanationLabel.sizeToFit()

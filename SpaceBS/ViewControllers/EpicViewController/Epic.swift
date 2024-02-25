@@ -16,6 +16,7 @@ class Epic: UIViewController {
     @IBOutlet weak var xLabel: UILabel!
     @IBOutlet weak var yLabel: UILabel!
     @IBOutlet weak var zLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     private let viewModel = EpicViewModel()
     private let disposeBag = DisposeBag()
 
