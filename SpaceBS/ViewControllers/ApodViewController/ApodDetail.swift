@@ -9,6 +9,7 @@ import UIKit
 import Kingfisher
 import RxSwift
 import RxCocoa
+import AVKit
 
 class ApodDetail: UIViewController {
     @IBOutlet weak var popUpView: UIView!
@@ -19,6 +20,8 @@ class ApodDetail: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     var viewModel = ApodDetailViewModel()
     private let disposeBag = DisposeBag()
+    private var player: AVPlayer?
+    private var playerViewController: AVPlayerViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +45,26 @@ class ApodDetail: UIViewController {
             .disposed(by: disposeBag)
     }
     private func updateUI(with apod: ApodModel) {
-        if let url = URL(string: apod.hdurl) {
-            imageView.kf.setImage(with: url)
+        if apod.media_type == "video" {
+            if let videoURL = URL(string: apod.url) {
+                player = AVPlayer(url: videoURL)
+                playerViewController = AVPlayerViewController()
+                playerViewController?.player = player
+                addChild(playerViewController!)
+                popUpView.addSubview(playerViewController!.view)
+                playerViewController!.view.translatesAutoresizingMaskIntoConstraints = false
+                NSLayoutConstraint.activate([
+                    playerViewController!.view.topAnchor.constraint(equalTo: imageView.topAnchor),
+                    playerViewController!.view.leadingAnchor.constraint(equalTo: imageView.leadingAnchor),
+                    playerViewController!.view.trailingAnchor.constraint(equalTo: imageView.trailingAnchor),
+                    playerViewController!.view.bottomAnchor.constraint(equalTo: imageView.bottomAnchor)
+                ])
+                player?.play()
+            }
+        } else {
+            if let imageURL = URL(string: apod.url) {
+                imageView.kf.setImage(with: imageURL)
+            }
         }
         dateLabel.text = "📆\(apod.date)"
         titleLabel.text = apod.title
@@ -51,6 +72,8 @@ class ApodDetail: UIViewController {
         explanationLabel.sizeToFit()
         scrollView.bottomAnchor.constraint(equalTo: explanationLabel.bottomAnchor).isActive = true
     }
+
+
     @objc func closeAction(sender : UITapGestureRecognizer) {
         self.dismiss(animated: true, completion: nil)
     }

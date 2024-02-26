@@ -70,6 +70,10 @@ class Epic: UIViewController {
             })
             .disposed(by: disposeBag)
         }
+    
+    @IBAction func menuButton(_ sender: Any) {
+        
+    }
     @IBAction func nasaButton(_ sender: Any) {
         if let url = URL(string: "https://www.nasa.gov") {
             UIApplication.shared.open(url)
