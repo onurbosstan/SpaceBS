@@ -12,7 +12,6 @@ import Kingfisher
 class GalleryViewModel {
     private let disposeBag = DisposeBag()
     private let galleryService = GaleryService.shared
-
     var nasaItems: PublishSubject<[NASAItem]> = PublishSubject()
     var isLoading: BehaviorSubject<Bool> = BehaviorSubject(value: false)
     
