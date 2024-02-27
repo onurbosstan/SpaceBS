@@ -25,14 +25,17 @@ class Curiosity: UIViewController {
         collectionView.collectionViewLayout = UICollectionViewLayout()
         collectionView.collectionViewLayout = CuriosityCollectionLayout(colmnsNumber: 2, minColmnsNumber: 1, minCell: 1)
         
+        fetchData()
+    }
+    func fetchData() {
         Animation.showActivityIndicator()
         viewModel.photoList
                 .subscribe(onNext: { [weak self] photos in
-                    if let selectedCamera = self?.selectedCamera 
+                    if let selectedCamera = self?.selectedCamera
                     {
                         self?.photoList = photos.filter { $0.camera.name == selectedCamera.rawValue
                         }
-                    } else 
+                    } else
                     {
                         self?.photoList = photos
                     }
