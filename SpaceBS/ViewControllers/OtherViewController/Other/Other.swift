@@ -10,8 +10,8 @@ import UIKit
 class Other: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let images = ["nasatv", "teleskop", "hubble"]
-    let titles = ["Nasa TV", "Gallery", "Observations"]
+    let images = ["nasalogo", "nasateleskop", "obser", "nasactive"]
+    let titles = ["Nasa TV", "Gallery", "Observations", "Active Programs"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,20 +23,20 @@ class Other: UIViewController {
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.scrollDirection = .horizontal
         }
-        collectionView.isScrollEnabled = false
+        //collectionView.isScrollEnabled = true
     }
 }
 extension Other: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return images.count
+        return images.count
         }
         
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OtherCell", for: indexPath) as! OtherCell
-            cell.imageView.image = UIImage(named: images[indexPath.item])
-            cell.titleLabel.text = titles[indexPath.item]
-            
-            return cell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OtherCell", for: indexPath) as! OtherCell
+        cell.imageView.image = UIImage(named: images[indexPath.item])
+        cell.titleLabel.text = titles[indexPath.item]
+                        
+        return cell
         }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             switch indexPath.item {
