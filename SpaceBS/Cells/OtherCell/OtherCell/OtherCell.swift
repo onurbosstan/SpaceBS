@@ -13,21 +13,19 @@ class OtherCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageView.layer.cornerRadius = 20
-        imageView.layer.masksToBounds = true
         
         titleLabel.textAlignment = .center
-                titleLabel.numberOfLines = 0
-                titleLabel.translatesAutoresizingMaskIntoConstraints = false
-                NSLayoutConstraint.activate([
-                    titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-                    titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 5)
+        titleLabel.numberOfLines = 0
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+        titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+        titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 5)
                 ])
     }
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        imageView.frame = CGRect(x: 0, y: 0, width: contentView.frame.size.width, height: contentView.frame.size.height - 20)
+        imageView.layer.cornerRadius = min(imageView.frame.size.width, imageView.frame.size.height) / 2
+        imageView.layer.masksToBounds = true
     }
 }
 

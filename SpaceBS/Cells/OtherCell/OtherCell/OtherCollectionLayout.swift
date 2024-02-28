@@ -27,8 +27,8 @@ class OtherCollectionLayout: UICollectionViewFlowLayout {
         super.prepare()
         guard collectionView != nil else { return }
         
-        let width = CGFloat(100)
-        let height = CGFloat(100)
+        let width = CGFloat(120)
+        let height = CGFloat(120)
         
         itemSize = CGSize(width: width, height: height)
     }

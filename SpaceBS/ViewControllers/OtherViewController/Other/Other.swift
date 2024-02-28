@@ -10,8 +10,8 @@ import UIKit
 class Other: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let images = ["nasatv", "teleskop"]
-    let titles = ["Nasa TV", "Gallery"]
+    let images = ["nasatv", "teleskop", "hubble"]
+    let titles = ["Nasa TV", "Gallery", "Observations"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +44,8 @@ extension Other: UICollectionViewDelegate, UICollectionViewDataSource {
                 performSegue(withIdentifier: "toNasaTV", sender: nil)
             case 1:
                 performSegue(withIdentifier: "toGallery", sender: nil)
+            case 2:
+                performSegue(withIdentifier: "toObservations", sender: nil)
             default:
                 break
             }
