@@ -46,6 +46,10 @@
 		C683B2202B9123F100C34F04 /* HumanSpaceflightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B21F2B9123F100C34F04 /* HumanSpaceflightViewModel.swift */; };
 		C683B2242B91249900C34F04 /* HumanSpaceflightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2232B91249900C34F04 /* HumanSpaceflightCell.swift */; };
 		C683B22A2B912CFE00C34F04 /* HumanSpaceflightDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2292B912CFE00C34F04 /* HumanSpaceflightDetail.swift */; };
+		C683B22D2B9133D900C34F04 /* ModernSpaceflight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B22C2B9133D900C34F04 /* ModernSpaceflight.swift */; };
+		C683B2302B91341A00C34F04 /* ModernSpaceflightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B22F2B91341A00C34F04 /* ModernSpaceflightCell.swift */; };
+		C683B2362B91348500C34F04 /* ModernSpaceflightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2352B91348500C34F04 /* ModernSpaceflightViewModel.swift */; };
+		C683B2382B91359E00C34F04 /* ModernSpaceflightDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2372B91359E00C34F04 /* ModernSpaceflightDetail.swift */; };
 		C68C69C02B83E23C003400E7 /* ApodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69BF2B83E23C003400E7 /* ApodDetail.swift */; };
 		C68C69C32B83E256003400E7 /* ApodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69C22B83E256003400E7 /* ApodViewModel.swift */; };
 		C68C69C62B83E273003400E7 /* ApodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69C52B83E273003400E7 /* ApodService.swift */; };
@@ -133,6 +137,10 @@
 		C683B21F2B9123F100C34F04 /* HumanSpaceflightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanSpaceflightViewModel.swift; sourceTree = "<group>"; };
 		C683B2232B91249900C34F04 /* HumanSpaceflightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanSpaceflightCell.swift; sourceTree = "<group>"; };
 		C683B2292B912CFE00C34F04 /* HumanSpaceflightDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanSpaceflightDetail.swift; sourceTree = "<group>"; };
+		C683B22C2B9133D900C34F04 /* ModernSpaceflight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernSpaceflight.swift; sourceTree = "<group>"; };
+		C683B22F2B91341A00C34F04 /* ModernSpaceflightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernSpaceflightCell.swift; sourceTree = "<group>"; };
+		C683B2352B91348500C34F04 /* ModernSpaceflightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernSpaceflightViewModel.swift; sourceTree = "<group>"; };
+		C683B2372B91359E00C34F04 /* ModernSpaceflightDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernSpaceflightDetail.swift; sourceTree = "<group>"; };
 		C68C69BF2B83E23C003400E7 /* ApodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDetail.swift; sourceTree = "<group>"; };
 		C68C69C22B83E256003400E7 /* ApodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModel.swift; sourceTree = "<group>"; };
 		C68C69C52B83E273003400E7 /* ApodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodService.swift; sourceTree = "<group>"; };
@@ -434,9 +442,9 @@
 		C683B20E2B911D7200C34F04 /* NasaInfoCell */ = {
 			isa = PBXGroup;
 			children = (
-				C683B2122B911DAD00C34F04 /* NasaInfoCollectionLayout.swift */,
-				C683B2102B911D9100C34F04 /* NasaInfoCell.swift */,
+				C683B2312B91342200C34F04 /* NasaInfoCell */,
 				C683B2222B91248000C34F04 /* HumanSpaceFlightCell */,
+				C683B22E2B9133FC00C34F04 /* ModernSpaceflightCell */,
 			);
 			path = NasaInfoCell;
 			sourceTree = "<group>";
@@ -460,8 +468,9 @@
 		C683B2182B91228E00C34F04 /* NasaInfoViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C683B2162B911DDE00C34F04 /* NasaInfoViewModel.swift */,
+				C683B2342B91346500C34F04 /* NasaInfoViewModel */,
 				C683B21E2B9123D900C34F04 /* HumanSpaceflightViewModel */,
+				C683B2332B91345100C34F04 /* ModernSpaceflightViewModel */,
 			);
 			path = NasaInfoViewModels;
 			sourceTree = "<group>";
@@ -469,8 +478,9 @@
 		C683B21A2B91233E00C34F04 /* NasaInfo */ = {
 			isa = PBXGroup;
 			children = (
-				C683B2082B911D3900C34F04 /* NasaInfo.swift */,
+				C683B2392B913A2300C34F04 /* NasaInfo */,
 				C683B21B2B91238900C34F04 /* HumanSpaceflight */,
+				C683B22B2B9133C000C34F04 /* ModernSpaceflight */,
 			);
 			path = NasaInfo;
 			sourceTree = "<group>";
@@ -498,6 +508,64 @@
 				C683B2232B91249900C34F04 /* HumanSpaceflightCell.swift */,
 			);
 			path = HumanSpaceFlightCell;
+			sourceTree = "<group>";
+		};
+		C683B22B2B9133C000C34F04 /* ModernSpaceflight */ = {
+			isa = PBXGroup;
+			children = (
+				C683B22C2B9133D900C34F04 /* ModernSpaceflight.swift */,
+				C683B2372B91359E00C34F04 /* ModernSpaceflightDetail.swift */,
+			);
+			path = ModernSpaceflight;
+			sourceTree = "<group>";
+		};
+		C683B22E2B9133FC00C34F04 /* ModernSpaceflightCell */ = {
+			isa = PBXGroup;
+			children = (
+				C683B22F2B91341A00C34F04 /* ModernSpaceflightCell.swift */,
+			);
+			path = ModernSpaceflightCell;
+			sourceTree = "<group>";
+		};
+		C683B2312B91342200C34F04 /* NasaInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				C683B2122B911DAD00C34F04 /* NasaInfoCollectionLayout.swift */,
+				C683B2102B911D9100C34F04 /* NasaInfoCell.swift */,
+			);
+			path = NasaInfoCell;
+			sourceTree = "<group>";
+		};
+		C683B2322B91343000C34F04 /* Nasa */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC18B12B8BA49C00994E01 /* Nasa.swift */,
+			);
+			path = Nasa;
+			sourceTree = "<group>";
+		};
+		C683B2332B91345100C34F04 /* ModernSpaceflightViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C683B2352B91348500C34F04 /* ModernSpaceflightViewModel.swift */,
+			);
+			path = ModernSpaceflightViewModel;
+			sourceTree = "<group>";
+		};
+		C683B2342B91346500C34F04 /* NasaInfoViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C683B2162B911DDE00C34F04 /* NasaInfoViewModel.swift */,
+			);
+			path = NasaInfoViewModel;
+			sourceTree = "<group>";
+		};
+		C683B2392B913A2300C34F04 /* NasaInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C683B2082B911D3900C34F04 /* NasaInfo.swift */,
+			);
+			path = NasaInfo;
 			sourceTree = "<group>";
 		};
 		C68C69C12B83E249003400E7 /* ApodViewModel */ = {
@@ -683,7 +751,7 @@
 		C6AC18B52B8CDA2900994E01 /* Nasa */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18B12B8BA49C00994E01 /* Nasa.swift */,
+				C683B2322B91343000C34F04 /* Nasa */,
 				C683B21A2B91233E00C34F04 /* NasaInfo */,
 			);
 			path = Nasa;
@@ -946,6 +1014,7 @@
 				C683B2242B91249900C34F04 /* HumanSpaceflightCell.swift in Sources */,
 				C6AC18B22B8BA49C00994E01 /* Nasa.swift in Sources */,
 				C6AC18D72B8CF11100994E01 /* GalleryDetailViewModel.swift in Sources */,
+				C683B2302B91341A00C34F04 /* ModernSpaceflightCell.swift in Sources */,
 				C626FF712B7EBE390025A215 /* EpicRoutes.swift in Sources */,
 				C6AC18BE2B8CDACD00994E01 /* NasaViewModel.swift in Sources */,
 				C6A18C0E2B6C237700CA7B62 /* LogInViewModel.swift in Sources */,
@@ -962,6 +1031,7 @@
 				C6AC18C12B8CDAE200994E01 /* GalleryViewModel.swift in Sources */,
 				C683B2112B911D9100C34F04 /* NasaInfoCell.swift in Sources */,
 				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
+				C683B2362B91348500C34F04 /* ModernSpaceflightViewModel.swift in Sources */,
 				C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */,
 				C626FF6A2B7EBDDC0025A215 /* EpicViewModel.swift in Sources */,
 				C66A2DF42B90BA28006791E4 /* ActiveProgramsViewModel.swift in Sources */,
@@ -969,6 +1039,7 @@
 				C682946F2B768F7B0020358F /* MenuCell.swift in Sources */,
 				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,
 				C6AC18AF2B8BA48000994E01 /* NasaCell.swift in Sources */,
+				C683B2382B91359E00C34F04 /* ModernSpaceflightDetail.swift in Sources */,
 				C68294712B768F8C0020358F /* Menu.swift in Sources */,
 				C6A18BF72B6AA52200CA7B62 /* AppDelegate.swift in Sources */,
 				C6AC18CC2B8CDC1300994E01 /* GalleryCollectionLayout.swift in Sources */,
@@ -980,6 +1051,7 @@
 				C66638222B821E1B00F1C1CD /* Apod.swift in Sources */,
 				C63DDD2D2B727439005A1C00 /* CuriosityCollectionLayout.swift in Sources */,
 				C63DDD262B7137F4005A1C00 /* Curiosity.swift in Sources */,
+				C683B22D2B9133D900C34F04 /* ModernSpaceflight.swift in Sources */,
 				C66A2DEE2B90B9E7006791E4 /* ActivePrograms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
