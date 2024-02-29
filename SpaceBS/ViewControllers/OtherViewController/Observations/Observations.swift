@@ -18,10 +18,10 @@ class Observations: UIViewController {
         tableView.dataSource = self
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "toObserDetail", let destinationVC = segue.destination as? ObservationsDetail {
-                destinationVC.observation = selectedObservation
-            }
+        if segue.identifier == "toObserDetail", let destinationVC = segue.destination as? ObservationsDetail {
+            destinationVC.observation = selectedObservation
         }
+    }
 }
 extension Observations: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

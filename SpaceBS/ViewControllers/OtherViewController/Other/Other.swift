@@ -46,6 +46,8 @@ extension Other: UICollectionViewDelegate, UICollectionViewDataSource {
                 performSegue(withIdentifier: "toGallery", sender: nil)
             case 2:
                 performSegue(withIdentifier: "toObservations", sender: nil)
+            case 3:
+                performSegue(withIdentifier: "toPrograms", sender: nil)
             default:
                 break
             }

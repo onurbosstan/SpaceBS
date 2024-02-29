@@ -8,7 +8,6 @@
 import UIKit
 
 class ObservationsDetail: UIViewController {
-    
     @IBOutlet weak var detailScrollView: UIScrollView!
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailRoverNameLabel: UILabel!

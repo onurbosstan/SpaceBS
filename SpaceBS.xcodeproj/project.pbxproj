@@ -25,6 +25,11 @@
 		C666381C2B821CDC00F1C1CD /* ApodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666381B2B821CDC00F1C1CD /* ApodModel.swift */; };
 		C666381F2B821D9800F1C1CD /* ApodRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666381E2B821D9800F1C1CD /* ApodRoutes.swift */; };
 		C66638222B821E1B00F1C1CD /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66638212B821E1B00F1C1CD /* Apod.swift */; };
+		C66A2DEE2B90B9E7006791E4 /* ActivePrograms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A2DED2B90B9E7006791E4 /* ActivePrograms.swift */; };
+		C66A2DF12B90BA06006791E4 /* ActiveProgramsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A2DF02B90BA06006791E4 /* ActiveProgramsCell.swift */; };
+		C66A2DF42B90BA28006791E4 /* ActiveProgramsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A2DF32B90BA28006791E4 /* ActiveProgramsViewModel.swift */; };
+		C66A2DF72B90BA48006791E4 /* ActiveProgramsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A2DF62B90BA48006791E4 /* ActiveProgramsModel.swift */; };
+		C66A2DF92B90BBAD006791E4 /* ActiveProgramsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66A2DF82B90BBAD006791E4 /* ActiveProgramsDetail.swift */; };
 		C67475F12B8F74EC001C2E54 /* Observations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67475F02B8F74EC001C2E54 /* Observations.swift */; };
 		C67475F42B8F750B001C2E54 /* ObservationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67475F32B8F750B001C2E54 /* ObservationsCell.swift */; };
 		C67475F72B8F751D001C2E54 /* ObservationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67475F62B8F751D001C2E54 /* ObservationsViewModel.swift */; };
@@ -98,6 +103,11 @@
 		C666381B2B821CDC00F1C1CD /* ApodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodModel.swift; sourceTree = "<group>"; };
 		C666381E2B821D9800F1C1CD /* ApodRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodRoutes.swift; sourceTree = "<group>"; };
 		C66638212B821E1B00F1C1CD /* Apod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
+		C66A2DED2B90B9E7006791E4 /* ActivePrograms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivePrograms.swift; sourceTree = "<group>"; };
+		C66A2DF02B90BA06006791E4 /* ActiveProgramsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveProgramsCell.swift; sourceTree = "<group>"; };
+		C66A2DF32B90BA28006791E4 /* ActiveProgramsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveProgramsViewModel.swift; sourceTree = "<group>"; };
+		C66A2DF62B90BA48006791E4 /* ActiveProgramsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveProgramsModel.swift; sourceTree = "<group>"; };
+		C66A2DF82B90BBAD006791E4 /* ActiveProgramsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveProgramsDetail.swift; sourceTree = "<group>"; };
 		C67475F02B8F74EC001C2E54 /* Observations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observations.swift; sourceTree = "<group>"; };
 		C67475F32B8F750B001C2E54 /* ObservationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationsCell.swift; sourceTree = "<group>"; };
 		C67475F62B8F751D001C2E54 /* ObservationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationsViewModel.swift; sourceTree = "<group>"; };
@@ -279,6 +289,39 @@
 				C68C69BF2B83E23C003400E7 /* ApodDetail.swift */,
 			);
 			path = ApodViewController;
+			sourceTree = "<group>";
+		};
+		C66A2DEC2B90B9CF006791E4 /* ActivePrograms */ = {
+			isa = PBXGroup;
+			children = (
+				C66A2DED2B90B9E7006791E4 /* ActivePrograms.swift */,
+				C66A2DF82B90BBAD006791E4 /* ActiveProgramsDetail.swift */,
+			);
+			path = ActivePrograms;
+			sourceTree = "<group>";
+		};
+		C66A2DEF2B90B9F1006791E4 /* ActiveProgramsCell */ = {
+			isa = PBXGroup;
+			children = (
+				C66A2DF02B90BA06006791E4 /* ActiveProgramsCell.swift */,
+			);
+			path = ActiveProgramsCell;
+			sourceTree = "<group>";
+		};
+		C66A2DF22B90BA0B006791E4 /* ActiveProgramsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C66A2DF32B90BA28006791E4 /* ActiveProgramsViewModel.swift */,
+			);
+			path = ActiveProgramsViewModel;
+			sourceTree = "<group>";
+		};
+		C66A2DF52B90BA35006791E4 /* ActiveProgramsEntity */ = {
+			isa = PBXGroup;
+			children = (
+				C66A2DF62B90BA48006791E4 /* ActiveProgramsModel.swift */,
+			);
+			path = ActiveProgramsEntity;
 			sourceTree = "<group>";
 		};
 		C67475EF2B8F74C5001C2E54 /* Observations */ = {
@@ -517,6 +560,7 @@
 				C6AC18B92B8CDA9700994E01 /* OtherCell */,
 				C6AC18BA2B8CDAA200994E01 /* GalleryCell */,
 				C67475F22B8F74F3001C2E54 /* ObservationsCell */,
+				C66A2DEF2B90B9F1006791E4 /* ActiveProgramsCell */,
 			);
 			path = OtherCell;
 			sourceTree = "<group>";
@@ -527,6 +571,7 @@
 				C6AC18B52B8CDA2900994E01 /* Other */,
 				C6AC18B62B8CDA3500994E01 /* Galery */,
 				C67475EF2B8F74C5001C2E54 /* Observations */,
+				C66A2DEC2B90B9CF006791E4 /* ActivePrograms */,
 			);
 			path = OtherViewController;
 			sourceTree = "<group>";
@@ -572,6 +617,7 @@
 				C6AC18BC2B8CDAB900994E01 /* OtherViewModel */,
 				C6AC18BF2B8CDAD100994E01 /* GalleryViewModel */,
 				C67475F52B8F7511001C2E54 /* ObservationsViewModel */,
+				C66A2DF22B90BA0B006791E4 /* ActiveProgramsViewModel */,
 			);
 			path = OtherViewModel;
 			sourceTree = "<group>";
@@ -622,6 +668,7 @@
 			children = (
 				C6AC18CF2B8CDD2000994E01 /* GalleryEntity */,
 				C67475F82B8F7969001C2E54 /* ObservationsEntity */,
+				C66A2DF52B90BA35006791E4 /* ActiveProgramsEntity */,
 			);
 			path = OtherEntity;
 			sourceTree = "<group>";
@@ -771,12 +818,15 @@
 				C6FBCA612B6D2E0200DEA784 /* RegisterViewModel.swift in Sources */,
 				C6AC18B42B8BA8AB00994E01 /* OtherCollectionLayout.swift in Sources */,
 				C6FBCA5D2B6D29E300DEA784 /* Users.swift in Sources */,
+				C66A2DF72B90BA48006791E4 /* ActiveProgramsModel.swift in Sources */,
 				C6AC18C52B8CDB1800994E01 /* GalleryService.swift in Sources */,
 				C6FBCA632B6D343400DEA784 /* UserProcesses.swift in Sources */,
 				C6AC18B82B8CDA8C00994E01 /* Gallery.swift in Sources */,
 				C6AC18CA2B8CDBFC00994E01 /* GalleryCell.swift in Sources */,
 				C6251D052B73B583001E09AE /* CuriosityPhotoDetailViewModel.swift in Sources */,
+				C66A2DF92B90BBAD006791E4 /* ActiveProgramsDetail.swift in Sources */,
 				C6A18C3B2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift in Sources */,
+				C66A2DF12B90BA06006791E4 /* ActiveProgramsCell.swift in Sources */,
 				C67475F12B8F74EC001C2E54 /* Observations.swift in Sources */,
 				C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */,
 				C67475FA2B8F7975001C2E54 /* ObservationsModel.swift in Sources */,
@@ -799,6 +849,7 @@
 				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
 				C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */,
 				C626FF6A2B7EBDDC0025A215 /* EpicViewModel.swift in Sources */,
+				C66A2DF42B90BA28006791E4 /* ActiveProgramsViewModel.swift in Sources */,
 				C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */,
 				C682946F2B768F7B0020358F /* MenuCell.swift in Sources */,
 				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,
@@ -813,6 +864,7 @@
 				C66638222B821E1B00F1C1CD /* Apod.swift in Sources */,
 				C63DDD2D2B727439005A1C00 /* CuriosityCollectionLayout.swift in Sources */,
 				C63DDD262B7137F4005A1C00 /* Curiosity.swift in Sources */,
+				C66A2DEE2B90B9E7006791E4 /* ActivePrograms.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
