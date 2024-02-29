@@ -38,7 +38,7 @@ extension Nasa: UICollectionViewDelegate, UICollectionViewDataSource {
         }
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OtherCell", for: indexPath) as! NasaCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NasaCell", for: indexPath) as! NasaCell
         cell.imageView.image = UIImage(named: images[indexPath.item])
         cell.titleLabel.text = titles[indexPath.item]
                         

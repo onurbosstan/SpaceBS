@@ -37,6 +37,15 @@
 		C67475FC2B8F7D29001C2E54 /* ObservationsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67475FB2B8F7D29001C2E54 /* ObservationsDetail.swift */; };
 		C682946F2B768F7B0020358F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682946E2B768F7B0020358F /* MenuCell.swift */; };
 		C68294712B768F8C0020358F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68294702B768F8B0020358F /* Menu.swift */; };
+		C683B2092B911D3900C34F04 /* NasaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2082B911D3900C34F04 /* NasaInfo.swift */; };
+		C683B20C2B911D5900C34F04 /* NasaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B20B2B911D5900C34F04 /* NasaModel.swift */; };
+		C683B2112B911D9100C34F04 /* NasaInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2102B911D9100C34F04 /* NasaInfoCell.swift */; };
+		C683B2132B911DAD00C34F04 /* NasaInfoCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2122B911DAD00C34F04 /* NasaInfoCollectionLayout.swift */; };
+		C683B2172B911DDE00C34F04 /* NasaInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2162B911DDE00C34F04 /* NasaInfoViewModel.swift */; };
+		C683B21D2B9123AC00C34F04 /* HumanSpaceflight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B21C2B9123AC00C34F04 /* HumanSpaceflight.swift */; };
+		C683B2202B9123F100C34F04 /* HumanSpaceflightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B21F2B9123F100C34F04 /* HumanSpaceflightViewModel.swift */; };
+		C683B2242B91249900C34F04 /* HumanSpaceflightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2232B91249900C34F04 /* HumanSpaceflightCell.swift */; };
+		C683B22A2B912CFE00C34F04 /* HumanSpaceflightDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683B2292B912CFE00C34F04 /* HumanSpaceflightDetail.swift */; };
 		C68C69C02B83E23C003400E7 /* ApodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69BF2B83E23C003400E7 /* ApodDetail.swift */; };
 		C68C69C32B83E256003400E7 /* ApodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69C22B83E256003400E7 /* ApodViewModel.swift */; };
 		C68C69C62B83E273003400E7 /* ApodService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68C69C52B83E273003400E7 /* ApodService.swift */; };
@@ -115,6 +124,15 @@
 		C67475FB2B8F7D29001C2E54 /* ObservationsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationsDetail.swift; sourceTree = "<group>"; };
 		C682946E2B768F7B0020358F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C68294702B768F8B0020358F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		C683B2082B911D3900C34F04 /* NasaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaInfo.swift; sourceTree = "<group>"; };
+		C683B20B2B911D5900C34F04 /* NasaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaModel.swift; sourceTree = "<group>"; };
+		C683B2102B911D9100C34F04 /* NasaInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaInfoCell.swift; sourceTree = "<group>"; };
+		C683B2122B911DAD00C34F04 /* NasaInfoCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaInfoCollectionLayout.swift; sourceTree = "<group>"; };
+		C683B2162B911DDE00C34F04 /* NasaInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaInfoViewModel.swift; sourceTree = "<group>"; };
+		C683B21C2B9123AC00C34F04 /* HumanSpaceflight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanSpaceflight.swift; sourceTree = "<group>"; };
+		C683B21F2B9123F100C34F04 /* HumanSpaceflightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanSpaceflightViewModel.swift; sourceTree = "<group>"; };
+		C683B2232B91249900C34F04 /* HumanSpaceflightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanSpaceflightCell.swift; sourceTree = "<group>"; };
+		C683B2292B912CFE00C34F04 /* HumanSpaceflightDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanSpaceflightDetail.swift; sourceTree = "<group>"; };
 		C68C69BF2B83E23C003400E7 /* ApodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDetail.swift; sourceTree = "<group>"; };
 		C68C69C22B83E256003400E7 /* ApodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModel.swift; sourceTree = "<group>"; };
 		C68C69C52B83E273003400E7 /* ApodService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodService.swift; sourceTree = "<group>"; };
@@ -396,6 +414,92 @@
 			path = CuriosityViewModels;
 			sourceTree = "<group>";
 		};
+		C683B20A2B911D4600C34F04 /* NasaEntity */ = {
+			isa = PBXGroup;
+			children = (
+				C683B20B2B911D5900C34F04 /* NasaModel.swift */,
+			);
+			path = NasaEntity;
+			sourceTree = "<group>";
+		};
+		C683B20D2B911D6700C34F04 /* NasaCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC18AE2B8BA48000994E01 /* NasaCell.swift */,
+				C6AC18B32B8BA8AB00994E01 /* NasaCollectionLayout.swift */,
+			);
+			path = NasaCell;
+			sourceTree = "<group>";
+		};
+		C683B20E2B911D7200C34F04 /* NasaInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				C683B2122B911DAD00C34F04 /* NasaInfoCollectionLayout.swift */,
+				C683B2102B911D9100C34F04 /* NasaInfoCell.swift */,
+				C683B2222B91248000C34F04 /* HumanSpaceFlightCell */,
+			);
+			path = NasaInfoCell;
+			sourceTree = "<group>";
+		};
+		C683B2142B911DBA00C34F04 /* NasaViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6AC18BD2B8CDACD00994E01 /* NasaViewModel.swift */,
+			);
+			path = NasaViewModel;
+			sourceTree = "<group>";
+		};
+		C683B2152B911DC600C34F04 /* NasaInfoViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C683B2182B91228E00C34F04 /* NasaInfoViewModels */,
+			);
+			path = NasaInfoViewModel;
+			sourceTree = "<group>";
+		};
+		C683B2182B91228E00C34F04 /* NasaInfoViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C683B2162B911DDE00C34F04 /* NasaInfoViewModel.swift */,
+				C683B21E2B9123D900C34F04 /* HumanSpaceflightViewModel */,
+			);
+			path = NasaInfoViewModels;
+			sourceTree = "<group>";
+		};
+		C683B21A2B91233E00C34F04 /* NasaInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C683B2082B911D3900C34F04 /* NasaInfo.swift */,
+				C683B21B2B91238900C34F04 /* HumanSpaceflight */,
+			);
+			path = NasaInfo;
+			sourceTree = "<group>";
+		};
+		C683B21B2B91238900C34F04 /* HumanSpaceflight */ = {
+			isa = PBXGroup;
+			children = (
+				C683B21C2B9123AC00C34F04 /* HumanSpaceflight.swift */,
+				C683B2292B912CFE00C34F04 /* HumanSpaceflightDetail.swift */,
+			);
+			path = HumanSpaceflight;
+			sourceTree = "<group>";
+		};
+		C683B21E2B9123D900C34F04 /* HumanSpaceflightViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C683B21F2B9123F100C34F04 /* HumanSpaceflightViewModel.swift */,
+			);
+			path = HumanSpaceflightViewModel;
+			sourceTree = "<group>";
+		};
+		C683B2222B91248000C34F04 /* HumanSpaceFlightCell */ = {
+			isa = PBXGroup;
+			children = (
+				C683B2232B91249900C34F04 /* HumanSpaceflightCell.swift */,
+			);
+			path = HumanSpaceFlightCell;
+			sourceTree = "<group>";
+		};
 		C68C69C12B83E249003400E7 /* ApodViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +684,7 @@
 			isa = PBXGroup;
 			children = (
 				C6AC18B12B8BA49C00994E01 /* Nasa.swift */,
+				C683B21A2B91233E00C34F04 /* NasaInfo */,
 			);
 			path = Nasa;
 			sourceTree = "<group>";
@@ -596,8 +701,8 @@
 		C6AC18B92B8CDA9700994E01 /* NasaCell */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18AE2B8BA48000994E01 /* NasaCell.swift */,
-				C6AC18B32B8BA8AB00994E01 /* NasaCollectionLayout.swift */,
+				C683B20D2B911D6700C34F04 /* NasaCell */,
+				C683B20E2B911D7200C34F04 /* NasaInfoCell */,
 			);
 			path = NasaCell;
 			sourceTree = "<group>";
@@ -614,7 +719,7 @@
 		C6AC18BB2B8CDAAA00994E01 /* NasaViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18BC2B8CDAB900994E01 /* NasaViewModel */,
+				C6AC18BC2B8CDAB900994E01 /* NasaViewModels */,
 				C6AC18BF2B8CDAD100994E01 /* GalleryViewModel */,
 				C67475F52B8F7511001C2E54 /* ObservationsViewModel */,
 				C66A2DF22B90BA0B006791E4 /* ActiveProgramsViewModel */,
@@ -622,12 +727,13 @@
 			path = NasaViewModels;
 			sourceTree = "<group>";
 		};
-		C6AC18BC2B8CDAB900994E01 /* NasaViewModel */ = {
+		C6AC18BC2B8CDAB900994E01 /* NasaViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18BD2B8CDACD00994E01 /* NasaViewModel.swift */,
+				C683B2142B911DBA00C34F04 /* NasaViewModel */,
+				C683B2152B911DC600C34F04 /* NasaInfoViewModel */,
 			);
-			path = NasaViewModel;
+			path = NasaViewModels;
 			sourceTree = "<group>";
 		};
 		C6AC18BF2B8CDAD100994E01 /* GalleryViewModel */ = {
@@ -666,6 +772,7 @@
 		C6AC18CD2B8CDC8200994E01 /* NasaEntity */ = {
 			isa = PBXGroup;
 			children = (
+				C683B20A2B911D4600C34F04 /* NasaEntity */,
 				C6AC18CF2B8CDD2000994E01 /* GalleryEntity */,
 				C67475F82B8F7969001C2E54 /* ObservationsEntity */,
 				C66A2DF52B90BA35006791E4 /* ActiveProgramsEntity */,
@@ -809,6 +916,7 @@
 				C626FF732B7EC2D10025A215 /* EpicDetail.swift in Sources */,
 				C6AC18D52B8CF0F900994E01 /* GalleryDetail.swift in Sources */,
 				C68C69C32B83E256003400E7 /* ApodViewModel.swift in Sources */,
+				C683B20C2B911D5900C34F04 /* NasaModel.swift in Sources */,
 				C626FF642B7EBC750025A215 /* EpicModel.swift in Sources */,
 				C626FF6E2B7EBE120025A215 /* EpicService.swift in Sources */,
 				C63DDD342B72984B005A1C00 /* CuriosityPhotoModel.swift in Sources */,
@@ -818,6 +926,9 @@
 				C6FBCA612B6D2E0200DEA784 /* RegisterViewModel.swift in Sources */,
 				C6AC18B42B8BA8AB00994E01 /* NasaCollectionLayout.swift in Sources */,
 				C6FBCA5D2B6D29E300DEA784 /* Users.swift in Sources */,
+				C683B2172B911DDE00C34F04 /* NasaInfoViewModel.swift in Sources */,
+				C683B21D2B9123AC00C34F04 /* HumanSpaceflight.swift in Sources */,
+				C683B2092B911D3900C34F04 /* NasaInfo.swift in Sources */,
 				C66A2DF72B90BA48006791E4 /* ActiveProgramsModel.swift in Sources */,
 				C6AC18C52B8CDB1800994E01 /* GalleryService.swift in Sources */,
 				C6FBCA632B6D343400DEA784 /* UserProcesses.swift in Sources */,
@@ -827,10 +938,12 @@
 				C66A2DF92B90BBAD006791E4 /* ActiveProgramsDetail.swift in Sources */,
 				C6A18C3B2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift in Sources */,
 				C66A2DF12B90BA06006791E4 /* ActiveProgramsCell.swift in Sources */,
+				C683B2202B9123F100C34F04 /* HumanSpaceflightViewModel.swift in Sources */,
 				C67475F12B8F74EC001C2E54 /* Observations.swift in Sources */,
 				C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */,
 				C67475FA2B8F7975001C2E54 /* ObservationsModel.swift in Sources */,
 				C68C69C62B83E273003400E7 /* ApodService.swift in Sources */,
+				C683B2242B91249900C34F04 /* HumanSpaceflightCell.swift in Sources */,
 				C6AC18B22B8BA49C00994E01 /* Nasa.swift in Sources */,
 				C6AC18D72B8CF11100994E01 /* GalleryDetailViewModel.swift in Sources */,
 				C626FF712B7EBE390025A215 /* EpicRoutes.swift in Sources */,
@@ -842,10 +955,12 @@
 				C626FF672B7EBDBC0025A215 /* Epic.swift in Sources */,
 				C6A18BFB2B6AA52200CA7B62 /* LogIn.swift in Sources */,
 				C6EAB6092B861ED9000B2A6D /* ApodCell.swift in Sources */,
+				C683B2132B911DAD00C34F04 /* NasaInfoCollectionLayout.swift in Sources */,
 				C6AC18D12B8CDE1800994E01 /* GalleryModel.swift in Sources */,
 				C63DDD362B729A4E005A1C00 /* CuriosityPhotoService.swift in Sources */,
 				C67475F42B8F750B001C2E54 /* ObservationsCell.swift in Sources */,
 				C6AC18C12B8CDAE200994E01 /* GalleryViewModel.swift in Sources */,
+				C683B2112B911D9100C34F04 /* NasaInfoCell.swift in Sources */,
 				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
 				C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */,
 				C626FF6A2B7EBDDC0025A215 /* EpicViewModel.swift in Sources */,
@@ -859,6 +974,7 @@
 				C6AC18CC2B8CDC1300994E01 /* GalleryCollectionLayout.swift in Sources */,
 				C67475F72B8F751D001C2E54 /* ObservationsViewModel.swift in Sources */,
 				C6A18C2E2B6C24E900CA7B62 /* Animation.swift in Sources */,
+				C683B22A2B912CFE00C34F04 /* HumanSpaceflightDetail.swift in Sources */,
 				C6A18BF92B6AA52200CA7B62 /* SceneDelegate.swift in Sources */,
 				C68C69C82B83E455003400E7 /* ApodDetailViewModel.swift in Sources */,
 				C66638222B821E1B00F1C1CD /* Apod.swift in Sources */,
