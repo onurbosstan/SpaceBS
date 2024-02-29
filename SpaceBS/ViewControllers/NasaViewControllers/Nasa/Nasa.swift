@@ -7,32 +7,38 @@
 
 import UIKit
 
-class Other: UIViewController {
+class Nasa: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var nasaLabel: UILabel!
+    var viewModel = NasaViewModel()
     
     let images = ["nasalogo", "nasateleskop", "obser", "nasactive"]
-    let titles = ["Nasa TV", "Gallery", "Observations", "Active Programs"]
+    let titles = ["Nasa", "Gallery", "Observations", "Active Programs"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nasaLabel.text = viewModel.nasaLabelText
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        collectionView.collectionViewLayout = OtherCollectionLayout(colmnsNumber: images.count, minColmnsNumber: 1, minCell: 1)
+        collectionView.collectionViewLayout = NasaCollectionLayout(colmnsNumber: images.count, minColmnsNumber: 1, minCell: 1)
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.scrollDirection = .horizontal
-        }
-        //collectionView.isScrollEnabled = true
     }
 }
-extension Other: UICollectionViewDelegate, UICollectionViewDataSource {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        scrollView.contentSize = CGSize(width: view.frame.width, height: nasaLabel.frame.origin.y + nasaLabel.frame.height)
+    }
+}
+extension Nasa: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
         }
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OtherCell", for: indexPath) as! OtherCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OtherCell", for: indexPath) as! NasaCell
         cell.imageView.image = UIImage(named: images[indexPath.item])
         cell.titleLabel.text = titles[indexPath.item]
                         
@@ -41,7 +47,7 @@ extension Other: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             switch indexPath.item {
             case 0:
-                performSegue(withIdentifier: "toNasaTV", sender: nil)
+                performSegue(withIdentifier: "toNasa", sender: nil)
             case 1:
                 performSegue(withIdentifier: "toGallery", sender: nil)
             case 2:

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OtherCollectionLayout: UICollectionViewFlowLayout {
+class NasaCollectionLayout: UICollectionViewFlowLayout {
     let colmnsNumber : Int
     var heightRatio : CGFloat = (1.0 / 1.0)
     

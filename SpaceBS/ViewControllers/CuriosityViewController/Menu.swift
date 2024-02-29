@@ -49,7 +49,7 @@ extension Menu: UITableViewDelegate, UITableViewDataSource
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
             let camera = NasaCamera.allCases[indexPath.row]
-            cell.cameraName.text = "🎥\(camera.rawValue)"
+            cell.cameraName.text = camera.rawValue
             return cell
         }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

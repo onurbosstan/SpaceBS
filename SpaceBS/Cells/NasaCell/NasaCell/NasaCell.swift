@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OtherCell: UICollectionViewCell {
+class NasaCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     

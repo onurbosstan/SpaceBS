@@ -64,11 +64,11 @@
 		C6A18C372B6C2AAE00CA7B62 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C6A18C362B6C2AAE00CA7B62 /* FirebaseFirestore */; };
 		C6A18C3B2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */; };
 		C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */; };
-		C6AC18AF2B8BA48000994E01 /* OtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18AE2B8BA48000994E01 /* OtherCell.swift */; };
-		C6AC18B22B8BA49C00994E01 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18B12B8BA49C00994E01 /* Other.swift */; };
-		C6AC18B42B8BA8AB00994E01 /* OtherCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18B32B8BA8AB00994E01 /* OtherCollectionLayout.swift */; };
+		C6AC18AF2B8BA48000994E01 /* NasaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18AE2B8BA48000994E01 /* NasaCell.swift */; };
+		C6AC18B22B8BA49C00994E01 /* Nasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18B12B8BA49C00994E01 /* Nasa.swift */; };
+		C6AC18B42B8BA8AB00994E01 /* NasaCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18B32B8BA8AB00994E01 /* NasaCollectionLayout.swift */; };
 		C6AC18B82B8CDA8C00994E01 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18B72B8CDA8C00994E01 /* Gallery.swift */; };
-		C6AC18BE2B8CDACD00994E01 /* OtherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18BD2B8CDACD00994E01 /* OtherViewModel.swift */; };
+		C6AC18BE2B8CDACD00994E01 /* NasaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18BD2B8CDACD00994E01 /* NasaViewModel.swift */; };
 		C6AC18C12B8CDAE200994E01 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18C02B8CDAE200994E01 /* GalleryViewModel.swift */; };
 		C6AC18C52B8CDB1800994E01 /* GalleryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18C42B8CDB1800994E01 /* GalleryService.swift */; };
 		C6AC18C82B8CDB3700994E01 /* GalleryRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18C72B8CDB3700994E01 /* GalleryRoutes.swift */; };
@@ -133,11 +133,11 @@
 		C6A18C2F2B6C262F00CA7B62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		C6A18C3C2B6C2DC500CA7B62 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
-		C6AC18AE2B8BA48000994E01 /* OtherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCell.swift; sourceTree = "<group>"; };
-		C6AC18B12B8BA49C00994E01 /* Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
-		C6AC18B32B8BA8AB00994E01 /* OtherCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCollectionLayout.swift; sourceTree = "<group>"; };
+		C6AC18AE2B8BA48000994E01 /* NasaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaCell.swift; sourceTree = "<group>"; };
+		C6AC18B12B8BA49C00994E01 /* Nasa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nasa.swift; sourceTree = "<group>"; };
+		C6AC18B32B8BA8AB00994E01 /* NasaCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaCollectionLayout.swift; sourceTree = "<group>"; };
 		C6AC18B72B8CDA8C00994E01 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
-		C6AC18BD2B8CDACD00994E01 /* OtherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewModel.swift; sourceTree = "<group>"; };
+		C6AC18BD2B8CDACD00994E01 /* NasaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaViewModel.swift; sourceTree = "<group>"; };
 		C6AC18C02B8CDAE200994E01 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		C6AC18C42B8CDB1800994E01 /* GalleryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryService.swift; sourceTree = "<group>"; };
 		C6AC18C72B8CDB3700994E01 /* GalleryRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryRoutes.swift; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 				C6BB307A2B7E58D40040E615 /* CuriosityEntity */,
 				C626FF622B7EBC5D0025A215 /* EpicEntity */,
 				C666381A2B821C9500F1C1CD /* ApodEntity */,
-				C6AC18CD2B8CDC8200994E01 /* OtherEntity */,
+				C6AC18CD2B8CDC8200994E01 /* NasaEntity */,
 			);
 			path = APIEntity;
 			sourceTree = "<group>";
@@ -473,7 +473,7 @@
 				C68294752B77B4710020358F /* CuriosityViewModels */,
 				C626FF682B7EBDCB0025A215 /* EpicViewModel */,
 				C68C69C12B83E249003400E7 /* ApodViewModel */,
-				C6AC18BB2B8CDAAA00994E01 /* OtherViewModel */,
+				C6AC18BB2B8CDAAA00994E01 /* NasaViewModels */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -483,7 +483,7 @@
 			children = (
 				C63DDD292B727403005A1C00 /* CuriostyCell */,
 				C6EAB6052B861EBA000B2A6D /* ApodCell */,
-				C6AC18AD2B8BA44D00994E01 /* OtherCell */,
+				C6AC18AD2B8BA44D00994E01 /* NasaCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -495,7 +495,7 @@
 				C68294722B77B41F0020358F /* CuriosityViewController */,
 				C626FF652B7EBD9C0025A215 /* EpicViewController */,
 				C66638202B821E0400F1C1CD /* ApodViewController */,
-				C6AC18B02B8BA48600994E01 /* OtherViewController */,
+				C6AC18B02B8BA48600994E01 /* NasaViewControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -554,34 +554,34 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		C6AC18AD2B8BA44D00994E01 /* OtherCell */ = {
+		C6AC18AD2B8BA44D00994E01 /* NasaCell */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18B92B8CDA9700994E01 /* OtherCell */,
+				C6AC18B92B8CDA9700994E01 /* NasaCell */,
 				C6AC18BA2B8CDAA200994E01 /* GalleryCell */,
 				C67475F22B8F74F3001C2E54 /* ObservationsCell */,
 				C66A2DEF2B90B9F1006791E4 /* ActiveProgramsCell */,
 			);
-			path = OtherCell;
+			path = NasaCell;
 			sourceTree = "<group>";
 		};
-		C6AC18B02B8BA48600994E01 /* OtherViewController */ = {
+		C6AC18B02B8BA48600994E01 /* NasaViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18B52B8CDA2900994E01 /* Other */,
+				C6AC18B52B8CDA2900994E01 /* Nasa */,
 				C6AC18B62B8CDA3500994E01 /* Galery */,
 				C67475EF2B8F74C5001C2E54 /* Observations */,
 				C66A2DEC2B90B9CF006791E4 /* ActivePrograms */,
 			);
-			path = OtherViewController;
+			path = NasaViewControllers;
 			sourceTree = "<group>";
 		};
-		C6AC18B52B8CDA2900994E01 /* Other */ = {
+		C6AC18B52B8CDA2900994E01 /* Nasa */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18B12B8BA49C00994E01 /* Other.swift */,
+				C6AC18B12B8BA49C00994E01 /* Nasa.swift */,
 			);
-			path = Other;
+			path = Nasa;
 			sourceTree = "<group>";
 		};
 		C6AC18B62B8CDA3500994E01 /* Galery */ = {
@@ -593,13 +593,13 @@
 			path = Galery;
 			sourceTree = "<group>";
 		};
-		C6AC18B92B8CDA9700994E01 /* OtherCell */ = {
+		C6AC18B92B8CDA9700994E01 /* NasaCell */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18AE2B8BA48000994E01 /* OtherCell.swift */,
-				C6AC18B32B8BA8AB00994E01 /* OtherCollectionLayout.swift */,
+				C6AC18AE2B8BA48000994E01 /* NasaCell.swift */,
+				C6AC18B32B8BA8AB00994E01 /* NasaCollectionLayout.swift */,
 			);
-			path = OtherCell;
+			path = NasaCell;
 			sourceTree = "<group>";
 		};
 		C6AC18BA2B8CDAA200994E01 /* GalleryCell */ = {
@@ -611,23 +611,23 @@
 			path = GalleryCell;
 			sourceTree = "<group>";
 		};
-		C6AC18BB2B8CDAAA00994E01 /* OtherViewModel */ = {
+		C6AC18BB2B8CDAAA00994E01 /* NasaViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18BC2B8CDAB900994E01 /* OtherViewModel */,
+				C6AC18BC2B8CDAB900994E01 /* NasaViewModel */,
 				C6AC18BF2B8CDAD100994E01 /* GalleryViewModel */,
 				C67475F52B8F7511001C2E54 /* ObservationsViewModel */,
 				C66A2DF22B90BA0B006791E4 /* ActiveProgramsViewModel */,
 			);
-			path = OtherViewModel;
+			path = NasaViewModels;
 			sourceTree = "<group>";
 		};
-		C6AC18BC2B8CDAB900994E01 /* OtherViewModel */ = {
+		C6AC18BC2B8CDAB900994E01 /* NasaViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18BD2B8CDACD00994E01 /* OtherViewModel.swift */,
+				C6AC18BD2B8CDACD00994E01 /* NasaViewModel.swift */,
 			);
-			path = OtherViewModel;
+			path = NasaViewModel;
 			sourceTree = "<group>";
 		};
 		C6AC18BF2B8CDAD100994E01 /* GalleryViewModel */ = {
@@ -663,14 +663,14 @@
 			path = OtherAPI;
 			sourceTree = "<group>";
 		};
-		C6AC18CD2B8CDC8200994E01 /* OtherEntity */ = {
+		C6AC18CD2B8CDC8200994E01 /* NasaEntity */ = {
 			isa = PBXGroup;
 			children = (
 				C6AC18CF2B8CDD2000994E01 /* GalleryEntity */,
 				C67475F82B8F7969001C2E54 /* ObservationsEntity */,
 				C66A2DF52B90BA35006791E4 /* ActiveProgramsEntity */,
 			);
-			path = OtherEntity;
+			path = NasaEntity;
 			sourceTree = "<group>";
 		};
 		C6AC18CF2B8CDD2000994E01 /* GalleryEntity */ = {
@@ -816,7 +816,7 @@
 				C6FBCA5F2B6D2DE600DEA784 /* Register.swift in Sources */,
 				C6AC18C82B8CDB3700994E01 /* GalleryRoutes.swift in Sources */,
 				C6FBCA612B6D2E0200DEA784 /* RegisterViewModel.swift in Sources */,
-				C6AC18B42B8BA8AB00994E01 /* OtherCollectionLayout.swift in Sources */,
+				C6AC18B42B8BA8AB00994E01 /* NasaCollectionLayout.swift in Sources */,
 				C6FBCA5D2B6D29E300DEA784 /* Users.swift in Sources */,
 				C66A2DF72B90BA48006791E4 /* ActiveProgramsModel.swift in Sources */,
 				C6AC18C52B8CDB1800994E01 /* GalleryService.swift in Sources */,
@@ -831,10 +831,10 @@
 				C6A18C3D2B6C2DC500CA7B62 /* ForgotPassword.swift in Sources */,
 				C67475FA2B8F7975001C2E54 /* ObservationsModel.swift in Sources */,
 				C68C69C62B83E273003400E7 /* ApodService.swift in Sources */,
-				C6AC18B22B8BA49C00994E01 /* Other.swift in Sources */,
+				C6AC18B22B8BA49C00994E01 /* Nasa.swift in Sources */,
 				C6AC18D72B8CF11100994E01 /* GalleryDetailViewModel.swift in Sources */,
 				C626FF712B7EBE390025A215 /* EpicRoutes.swift in Sources */,
-				C6AC18BE2B8CDACD00994E01 /* OtherViewModel.swift in Sources */,
+				C6AC18BE2B8CDACD00994E01 /* NasaViewModel.swift in Sources */,
 				C6A18C0E2B6C237700CA7B62 /* LogInViewModel.swift in Sources */,
 				C67475FC2B8F7D29001C2E54 /* ObservationsDetail.swift in Sources */,
 				C68C69C02B83E23C003400E7 /* ApodDetail.swift in Sources */,
@@ -853,7 +853,7 @@
 				C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */,
 				C682946F2B768F7B0020358F /* MenuCell.swift in Sources */,
 				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,
-				C6AC18AF2B8BA48000994E01 /* OtherCell.swift in Sources */,
+				C6AC18AF2B8BA48000994E01 /* NasaCell.swift in Sources */,
 				C68294712B768F8C0020358F /* Menu.swift in Sources */,
 				C6A18BF72B6AA52200CA7B62 /* AppDelegate.swift in Sources */,
 				C6AC18CC2B8CDC1300994E01 /* GalleryCollectionLayout.swift in Sources */,
