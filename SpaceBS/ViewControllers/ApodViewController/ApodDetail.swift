@@ -8,7 +8,6 @@
 import UIKit
 import Kingfisher
 import RxSwift
-import RxCocoa
 import AVKit
 
 class ApodDetail: UIViewController {

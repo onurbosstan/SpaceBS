@@ -13,8 +13,8 @@ class NasaInfo: UIViewController {
     @IBOutlet weak var infoCollectionView: UICollectionView!
     @IBOutlet weak var scrollTitleLabel: UILabel!
     var viewModel = NasaInfoViewModel()
-    let images = ["humansps", "spacex"]
-    let titles = ["Human Spaceflight", "Modern Spaceflight"]
+    let images = ["humansps", "spacex", "nafa"]
+    let titles = ["Human Spaceflight", "Modern Spaceflight", "Facilities"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ extension NasaInfo: UICollectionViewDelegate, UICollectionViewDataSource {
             case 1:
                 performSegue(withIdentifier: "toModern", sender: nil)
             case 2:
-                performSegue(withIdentifier: "", sender: nil)
+                performSegue(withIdentifier: "toFacilities", sender: nil)
             case 3:
                 performSegue(withIdentifier: "", sender: nil)
             default:
