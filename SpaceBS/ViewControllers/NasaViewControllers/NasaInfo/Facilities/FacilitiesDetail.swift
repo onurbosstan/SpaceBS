@@ -22,6 +22,5 @@ class FacilitiesDetail: UIViewController {
             imageView.image = UIImage(named: facilities.image)
             facilitiesTitleLabel.text = facilities.title
         }
-
     }
 }
