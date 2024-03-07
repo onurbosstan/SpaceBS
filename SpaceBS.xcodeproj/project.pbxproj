@@ -105,6 +105,8 @@
 		C6E5BB312B9A1411009A883A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB302B9A1411009A883A /* Profile.swift */; };
 		C6E5BB332B9A1421009A883A /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB322B9A1420009A883A /* ProfileCell.swift */; };
 		C6E5BB352B9A143E009A883A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB342B9A143E009A883A /* ProfileViewModel.swift */; };
+		C6E5BB392B9A1F19009A883A /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB382B9A1F19009A883A /* ChangePasswordViewModel.swift */; };
+		C6E5BB3D2B9A1F47009A883A /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB3C2B9A1F47009A883A /* ChangePassword.swift */; };
 		C6EAB6092B861ED9000B2A6D /* ApodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EAB6082B861ED9000B2A6D /* ApodCell.swift */; };
 		C6FBCA5D2B6D29E300DEA784 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA5C2B6D29E300DEA784 /* Users.swift */; };
 		C6FBCA5F2B6D2DE600DEA784 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA5E2B6D2DE600DEA784 /* Register.swift */; };
@@ -203,6 +205,8 @@
 		C6E5BB302B9A1411009A883A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		C6E5BB322B9A1420009A883A /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		C6E5BB342B9A143E009A883A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C6E5BB382B9A1F19009A883A /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		C6E5BB3C2B9A1F47009A883A /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
 		C6EAB6082B861ED9000B2A6D /* ApodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodCell.swift; sourceTree = "<group>"; };
 		C6FBCA5C2B6D29E300DEA784 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		C6FBCA5E2B6D2DE600DEA784 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -992,7 +996,8 @@
 		C6E5BB2D2B9A138B009A883A /* ProfileViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6E5BB302B9A1411009A883A /* Profile.swift */,
+				C6E5BB3A2B9A1F25009A883A /* ProfileViewController */,
+				C6E5BB3B2B9A1F2F009A883A /* ChangePasswordViewController */,
 			);
 			path = ProfileViewControllers;
 			sourceTree = "<group>";
@@ -1008,9 +1013,42 @@
 		C6E5BB2F2B9A13BB009A883A /* ProfileViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C6E5BB342B9A143E009A883A /* ProfileViewModel.swift */,
+				C6E5BB362B9A1EFA009A883A /* ProfileViewModel */,
+				C6E5BB372B9A1F04009A883A /* ChangePasswordViewModel */,
 			);
 			path = ProfileViewModels;
+			sourceTree = "<group>";
+		};
+		C6E5BB362B9A1EFA009A883A /* ProfileViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5BB342B9A143E009A883A /* ProfileViewModel.swift */,
+			);
+			path = ProfileViewModel;
+			sourceTree = "<group>";
+		};
+		C6E5BB372B9A1F04009A883A /* ChangePasswordViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5BB382B9A1F19009A883A /* ChangePasswordViewModel.swift */,
+			);
+			path = ChangePasswordViewModel;
+			sourceTree = "<group>";
+		};
+		C6E5BB3A2B9A1F25009A883A /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5BB302B9A1411009A883A /* Profile.swift */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		C6E5BB3B2B9A1F2F009A883A /* ChangePasswordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5BB3C2B9A1F47009A883A /* ChangePassword.swift */,
+			);
+			path = ChangePasswordViewController;
 			sourceTree = "<group>";
 		};
 		C6E8A3342B7E4AF900FDC70A /* CuriosityAPI */ = {
@@ -1175,6 +1213,7 @@
 				C63DDD362B729A4E005A1C00 /* CuriosityPhotoService.swift in Sources */,
 				C67475F42B8F750B001C2E54 /* ObservationsCell.swift in Sources */,
 				C6E5BB312B9A1411009A883A /* Profile.swift in Sources */,
+				C6E5BB392B9A1F19009A883A /* ChangePasswordViewModel.swift in Sources */,
 				C6AC18C12B8CDAE200994E01 /* GalleryViewModel.swift in Sources */,
 				C683B2112B911D9100C34F04 /* NasaInfoCell.swift in Sources */,
 				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
@@ -1189,6 +1228,7 @@
 				C6AC18AF2B8BA48000994E01 /* NasaCell.swift in Sources */,
 				C683B2382B91359E00C34F04 /* ModernSpaceflightDetail.swift in Sources */,
 				C6E5BB1E2B9641C9009A883A /* ScientificResearchCell.swift in Sources */,
+				C6E5BB3D2B9A1F47009A883A /* ChangePassword.swift in Sources */,
 				C6E5BB1B2B9641A8009A883A /* ScientificResearchDetail.swift in Sources */,
 				C6E5BB2C2B9648FB009A883A /* VehiclesViewModel.swift in Sources */,
 				C68294712B768F8C0020358F /* Menu.swift in Sources */,

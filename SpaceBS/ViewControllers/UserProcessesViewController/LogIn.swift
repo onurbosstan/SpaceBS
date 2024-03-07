@@ -18,6 +18,11 @@ class LogIn: UIViewController {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(closeKeyboard))
         view.addGestureRecognizer(tap)
+        
+        let currentUser = Auth.auth().currentUser
+        if currentUser != nil {
+            self.performSegue(withIdentifier: "toHomeVC", sender: nil)
+        }
     }
     @objc func closeKeyboard()
     {
