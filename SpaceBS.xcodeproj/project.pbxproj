@@ -102,6 +102,9 @@
 		C6E5BB262B9648C3009A883A /* VehiclesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB252B9648C3009A883A /* VehiclesDetail.swift */; };
 		C6E5BB292B9648DD009A883A /* VehiclesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB282B9648DD009A883A /* VehiclesCell.swift */; };
 		C6E5BB2C2B9648FB009A883A /* VehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB2B2B9648FB009A883A /* VehiclesViewModel.swift */; };
+		C6E5BB312B9A1411009A883A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB302B9A1411009A883A /* Profile.swift */; };
+		C6E5BB332B9A1421009A883A /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB322B9A1420009A883A /* ProfileCell.swift */; };
+		C6E5BB352B9A143E009A883A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB342B9A143E009A883A /* ProfileViewModel.swift */; };
 		C6EAB6092B861ED9000B2A6D /* ApodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EAB6082B861ED9000B2A6D /* ApodCell.swift */; };
 		C6FBCA5D2B6D29E300DEA784 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA5C2B6D29E300DEA784 /* Users.swift */; };
 		C6FBCA5F2B6D2DE600DEA784 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBCA5E2B6D2DE600DEA784 /* Register.swift */; };
@@ -197,6 +200,9 @@
 		C6E5BB252B9648C3009A883A /* VehiclesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesDetail.swift; sourceTree = "<group>"; };
 		C6E5BB282B9648DD009A883A /* VehiclesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesCell.swift; sourceTree = "<group>"; };
 		C6E5BB2B2B9648FB009A883A /* VehiclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModel.swift; sourceTree = "<group>"; };
+		C6E5BB302B9A1411009A883A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C6E5BB322B9A1420009A883A /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		C6E5BB342B9A143E009A883A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		C6EAB6082B861ED9000B2A6D /* ApodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodCell.swift; sourceTree = "<group>"; };
 		C6FBCA5C2B6D29E300DEA784 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		C6FBCA5E2B6D2DE600DEA784 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -292,7 +298,7 @@
 				C626FF6B2B7EBDEB0025A215 /* CuriosityService */,
 				C626FF6C2B7EBDFA0025A215 /* EpicService */,
 				C68C69C42B83E25D003400E7 /* ApodService */,
-				C6AC18C22B8CDAE700994E01 /* OtherService */,
+				C6AC18C22B8CDAE700994E01 /* NasaService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -311,7 +317,6 @@
 				C6BB307A2B7E58D40040E615 /* CuriosityEntity */,
 				C626FF622B7EBC5D0025A215 /* EpicEntity */,
 				C666381A2B821C9500F1C1CD /* ApodEntity */,
-				C6AC18CD2B8CDC8200994E01 /* NasaEntity */,
 			);
 			path = APIEntity;
 			sourceTree = "<group>";
@@ -427,14 +432,14 @@
 			path = UserProcessesViewController;
 			sourceTree = "<group>";
 		};
-		C68294742B77B4660020358F /* UserProcessesViewModel */ = {
+		C68294742B77B4660020358F /* UserProcessesViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				C6A18C0D2B6C237700CA7B62 /* LogInViewModel.swift */,
 				C6FBCA602B6D2E0200DEA784 /* RegisterViewModel.swift */,
 				C6A18C3A2B6C2DAC00CA7B62 /* ForgotPasswordViewModel.swift */,
 			);
-			path = UserProcessesViewModel;
+			path = UserProcessesViewModels;
 			sourceTree = "<group>";
 		};
 		C68294752B77B4710020358F /* CuriosityViewModels */ = {
@@ -674,11 +679,12 @@
 		C6A18C0C2B6C235000CA7B62 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C68294742B77B4660020358F /* UserProcessesViewModel */,
+				C68294742B77B4660020358F /* UserProcessesViewModels */,
 				C68294752B77B4710020358F /* CuriosityViewModels */,
 				C626FF682B7EBDCB0025A215 /* EpicViewModel */,
 				C68C69C12B83E249003400E7 /* ApodViewModel */,
 				C6AC18BB2B8CDAAA00994E01 /* NasaViewModels */,
+				C6E5BB2F2B9A13BB009A883A /* ProfileViewModels */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -689,6 +695,7 @@
 				C63DDD292B727403005A1C00 /* CuriostyCell */,
 				C6EAB6052B861EBA000B2A6D /* ApodCell */,
 				C6AC18AD2B8BA44D00994E01 /* NasaCell */,
+				C6E5BB2E2B9A13A1009A883A /* ProfileCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -701,6 +708,7 @@
 				C626FF652B7EBD9C0025A215 /* EpicViewController */,
 				C66638202B821E0400F1C1CD /* ApodViewController */,
 				C6AC18B02B8BA48600994E01 /* NasaViewControllers */,
+				C6E5BB2D2B9A138B009A883A /* ProfileViewControllers */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -736,6 +744,7 @@
 			isa = PBXGroup;
 			children = (
 				C6563E422B7BD7CC008FF981 /* UsersEntity */,
+				C6AC18CD2B8CDC8200994E01 /* NasaEntity */,
 				C6563E432B7BD7D8008FF981 /* APIEntity */,
 			);
 			path = Entity;
@@ -846,20 +855,20 @@
 			path = GalleryViewModel;
 			sourceTree = "<group>";
 		};
-		C6AC18C22B8CDAE700994E01 /* OtherService */ = {
+		C6AC18C22B8CDAE700994E01 /* NasaService */ = {
 			isa = PBXGroup;
 			children = (
-				C6AC18C32B8CDB0B00994E01 /* GaleryService */,
+				C6AC18C32B8CDB0B00994E01 /* GalleryService */,
 			);
-			path = OtherService;
+			path = NasaService;
 			sourceTree = "<group>";
 		};
-		C6AC18C32B8CDB0B00994E01 /* GaleryService */ = {
+		C6AC18C32B8CDB0B00994E01 /* GalleryService */ = {
 			isa = PBXGroup;
 			children = (
 				C6AC18C42B8CDB1800994E01 /* GalleryService.swift */,
 			);
-			path = GaleryService;
+			path = GalleryService;
 			sourceTree = "<group>";
 		};
 		C6AC18C62B8CDB1D00994E01 /* OtherAPI */ = {
@@ -978,6 +987,30 @@
 				C6E5BB2B2B9648FB009A883A /* VehiclesViewModel.swift */,
 			);
 			path = VehiclesViewModel;
+			sourceTree = "<group>";
+		};
+		C6E5BB2D2B9A138B009A883A /* ProfileViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5BB302B9A1411009A883A /* Profile.swift */,
+			);
+			path = ProfileViewControllers;
+			sourceTree = "<group>";
+		};
+		C6E5BB2E2B9A13A1009A883A /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5BB322B9A1420009A883A /* ProfileCell.swift */,
+			);
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		C6E5BB2F2B9A13BB009A883A /* ProfileViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C6E5BB342B9A143E009A883A /* ProfileViewModel.swift */,
+			);
+			path = ProfileViewModels;
 			sourceTree = "<group>";
 		};
 		C6E8A3342B7E4AF900FDC70A /* CuriosityAPI */ = {
@@ -1134,12 +1167,14 @@
 				C666381C2B821CDC00F1C1CD /* ApodModel.swift in Sources */,
 				C626FF672B7EBDBC0025A215 /* Epic.swift in Sources */,
 				C6A18BFB2B6AA52200CA7B62 /* LogIn.swift in Sources */,
+				C6E5BB332B9A1421009A883A /* ProfileCell.swift in Sources */,
 				C6EAB6092B861ED9000B2A6D /* ApodCell.swift in Sources */,
 				C683B2132B911DAD00C34F04 /* NasaInfoCollectionLayout.swift in Sources */,
 				C6AC18D12B8CDE1800994E01 /* GalleryModel.swift in Sources */,
 				C6E5BB0B2B96379D009A883A /* Facilities.swift in Sources */,
 				C63DDD362B729A4E005A1C00 /* CuriosityPhotoService.swift in Sources */,
 				C67475F42B8F750B001C2E54 /* ObservationsCell.swift in Sources */,
+				C6E5BB312B9A1411009A883A /* Profile.swift in Sources */,
 				C6AC18C12B8CDAE200994E01 /* GalleryViewModel.swift in Sources */,
 				C683B2112B911D9100C34F04 /* NasaInfoCell.swift in Sources */,
 				C6251D032B73B56F001E09AE /* CuriosityPhotoDetail.swift in Sources */,
@@ -1147,6 +1182,7 @@
 				C63DDD2B2B727424005A1C00 /* CuriosityCell.swift in Sources */,
 				C626FF6A2B7EBDDC0025A215 /* EpicViewModel.swift in Sources */,
 				C66A2DF42B90BA28006791E4 /* ActiveProgramsViewModel.swift in Sources */,
+				C6E5BB352B9A143E009A883A /* ProfileViewModel.swift in Sources */,
 				C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */,
 				C682946F2B768F7B0020358F /* MenuCell.swift in Sources */,
 				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,
