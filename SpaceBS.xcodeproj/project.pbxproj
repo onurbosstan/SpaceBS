@@ -90,6 +90,8 @@
 		C6AC18D12B8CDE1800994E01 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18D02B8CDE1800994E01 /* GalleryModel.swift */; };
 		C6AC18D52B8CF0F900994E01 /* GalleryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18D42B8CF0F900994E01 /* GalleryDetail.swift */; };
 		C6AC18D72B8CF11100994E01 /* GalleryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC18D62B8CF11100994E01 /* GalleryDetailViewModel.swift */; };
+		C6DE44932B9C7A0E005E9174 /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DE44922B9C7A0E005E9174 /* ChangeEmail.swift */; };
+		C6DE44962B9C7A2F005E9174 /* ChangeEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DE44952B9C7A2F005E9174 /* ChangeEmailViewModel.swift */; };
 		C6E5BB0B2B96379D009A883A /* Facilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB0A2B96379D009A883A /* Facilities.swift */; };
 		C6E5BB0D2B9637AC009A883A /* FacilitiesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB0C2B9637AC009A883A /* FacilitiesDetail.swift */; };
 		C6E5BB102B9637E0009A883A /* FacilitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E5BB0F2B9637E0009A883A /* FacilitiesCell.swift */; };
@@ -190,6 +192,8 @@
 		C6AC18D32B8CEC0700994E01 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		C6AC18D42B8CF0F900994E01 /* GalleryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetail.swift; sourceTree = "<group>"; };
 		C6AC18D62B8CF11100994E01 /* GalleryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailViewModel.swift; sourceTree = "<group>"; };
+		C6DE44922B9C7A0E005E9174 /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
+		C6DE44952B9C7A2F005E9174 /* ChangeEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewModel.swift; sourceTree = "<group>"; };
 		C6E5BB0A2B96379D009A883A /* Facilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facilities.swift; sourceTree = "<group>"; };
 		C6E5BB0C2B9637AC009A883A /* FacilitiesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesDetail.swift; sourceTree = "<group>"; };
 		C6E5BB0F2B9637E0009A883A /* FacilitiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilitiesCell.swift; sourceTree = "<group>"; };
@@ -918,6 +922,22 @@
 			path = CuriosityEntity;
 			sourceTree = "<group>";
 		};
+		C6DE44912B9C79F0005E9174 /* ChangeEmailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6DE44922B9C7A0E005E9174 /* ChangeEmail.swift */,
+			);
+			path = ChangeEmailViewController;
+			sourceTree = "<group>";
+		};
+		C6DE44942B9C7A15005E9174 /* ChangeEmailViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C6DE44952B9C7A2F005E9174 /* ChangeEmailViewModel.swift */,
+			);
+			path = ChangeEmailViewModel;
+			sourceTree = "<group>";
+		};
 		C6E5BB092B963779009A883A /* Facilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -998,6 +1018,7 @@
 			children = (
 				C6E5BB3A2B9A1F25009A883A /* ProfileViewController */,
 				C6E5BB3B2B9A1F2F009A883A /* ChangePasswordViewController */,
+				C6DE44912B9C79F0005E9174 /* ChangeEmailViewController */,
 			);
 			path = ProfileViewControllers;
 			sourceTree = "<group>";
@@ -1015,6 +1036,7 @@
 			children = (
 				C6E5BB362B9A1EFA009A883A /* ProfileViewModel */,
 				C6E5BB372B9A1F04009A883A /* ChangePasswordViewModel */,
+				C6DE44942B9C7A15005E9174 /* ChangeEmailViewModel */,
 			);
 			path = ProfileViewModels;
 			sourceTree = "<group>";
@@ -1222,9 +1244,11 @@
 				C626FF6A2B7EBDDC0025A215 /* EpicViewModel.swift in Sources */,
 				C66A2DF42B90BA28006791E4 /* ActiveProgramsViewModel.swift in Sources */,
 				C6E5BB352B9A143E009A883A /* ProfileViewModel.swift in Sources */,
+				C6DE44932B9C7A0E005E9174 /* ChangeEmail.swift in Sources */,
 				C63DDD2F2B7295CE005A1C00 /* CuriosityRoutes.swift in Sources */,
 				C682946F2B768F7B0020358F /* MenuCell.swift in Sources */,
 				C63DDD282B7137FE005A1C00 /* CuriosityViewModel.swift in Sources */,
+				C6DE44962B9C7A2F005E9174 /* ChangeEmailViewModel.swift in Sources */,
 				C6AC18AF2B8BA48000994E01 /* NasaCell.swift in Sources */,
 				C683B2382B91359E00C34F04 /* ModernSpaceflightDetail.swift in Sources */,
 				C6E5BB1E2B9641C9009A883A /* ScientificResearchCell.swift in Sources */,

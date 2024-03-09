@@ -14,6 +14,7 @@ class Profile: UIViewController {
     let menuOptions: [[(title: String, image: String, bgColor: UIColor, iconColor: UIColor)]] =
        [
            [
+            (title: "Change E-Mail Address", image: "envelope.circle", bgColor: .gray ,iconColor: .white),
             (title: "Change Password", image: "lock.fill", bgColor: UIColor(red: 1.0, green: 0.8, blue: 0.0, alpha: 1.0), iconColor: .white),
             (title: "Logout", image: "rectangle.portrait.and.arrow.right", bgColor: .red, iconColor: .white)]
        ]
@@ -50,8 +51,10 @@ extension Profile: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
         case 0:
-            self.performSegue(withIdentifier: "toChangePassword", sender: nil)
+            self.performSegue(withIdentifier: "toChangeEmail", sender: nil)
         case 1:
+            self.performSegue(withIdentifier: "toChangePassword", sender: nil)
+        case 2:
             logOut()
         default:
             break

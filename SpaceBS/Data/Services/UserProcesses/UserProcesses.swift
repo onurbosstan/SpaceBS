@@ -85,5 +85,12 @@ class UserProcesses {
             completion(false)
         }
     }
+    func changeEmail(newEmail: String, completion: @escaping (Error?) -> Void) 
+    {
+            let currentUser = Auth.auth().currentUser
+            currentUser?.sendEmailVerification(beforeUpdatingEmail: newEmail) { error in
+                completion(error)
+        }
+    }
 }
 
